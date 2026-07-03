@@ -3,3 +3,4 @@
 .checks/*
 !.checks/*.txt
 !.checks/*.json
+scripts/external-libs
