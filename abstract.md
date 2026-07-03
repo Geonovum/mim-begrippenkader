@@ -1,1 +1,1 @@
-TODO: vul in abstract.md een abstract in.
+Dit document geeft het begrippenkader voor het MIM metamodel.
