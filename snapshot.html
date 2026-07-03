@@ -3,19 +3,6 @@
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
 <meta name="generator" content="ReSpec 37.0.0">
 <style>
-.issue-label{text-transform:initial}
-.warning>p:first-child{margin-top:0}
-.warning{padding:.5em;border-left-width:.5em;border-left-style:solid}
-span.warning{padding:.1em .5em .15em}
-.issue.closed span.issue-number{text-decoration:line-through}
-.issue.closed span.issue-number::after{content:" (Closed)";font-size:smaller}
-.warning{border-color:#f11;border-color:var(--warning-border,#f11);border-width:.2em;border-style:solid;background:#fbe9e9;background:var(--warning-bg,#fbe9e9);color:#000;color:var(--text,#000)}
-.warning-title:before{content:"⚠";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}
-li.task-list-item{list-style:none}
-input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
-.issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}
-</style>
-<style>
 dfn{cursor:pointer}
 .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;background:var(--indextable-hover-bg,#fff);color:#000;color:var(--text,#000);box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);box-shadow:0 1em 3em -.4em var(--tocsidebar-shadow,rgba(0,0,0,.3)),0 0 1px 1px var(--tocsidebar-shadow,rgba(0,0,0,.05));border-radius:2px}
 .dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
@@ -125,52 +112,7 @@ ul.index code{color:inherit}
 #index-defined-here .print-only{display:initial}
 }
 </style>
-<meta name="description" content="TODO: vul in abstract.md een abstract in.">
-<style>
-.hljs,body:has(input[name=color-scheme][value=light]:checked) .hljs,head:not(:has(meta[name=color-scheme][content~=dark]))+body .hljs{--base:#fafafa;--mono-1:#383a42;--mono-2:#686b77;--mono-3:#717277;--hue-1:#0b76c5;--hue-2:#336ae3;--hue-3:#a626a4;--hue-4:#42803c;--hue-5:#ca4706;--hue-5-2:#c91243;--hue-6:#986801;--hue-6-2:#9a6a01}
-@media (prefers-color-scheme:dark){
-.hljs{
-  --base: #282c34;
-  --mono-1: #abb2bf;
-  --mono-2: #818896;
-  --mono-3: #5c6370;
-  --hue-1: #56b6c2;
-  --hue-2: #61aeee;
-  --hue-3: #c678dd;
-  --hue-4: #98c379;
-  --hue-5: #e06c75;
-  --hue-5-2: #be5046;
-  --hue-6: #d19a66;
-  --hue-6-2: #e6c07b;
-}
-}
-body:has(input[name=color-scheme][value=dark]:checked) .hljs{
-  --base: #282c34;
-  --mono-1: #abb2bf;
-  --mono-2: #818896;
-  --mono-3: #5c6370;
-  --hue-1: #56b6c2;
-  --hue-2: #61aeee;
-  --hue-3: #c678dd;
-  --hue-4: #98c379;
-  --hue-5: #e06c75;
-  --hue-5-2: #be5046;
-  --hue-6: #d19a66;
-  --hue-6-2: #e6c07b;
-}
-.hljs{display:block;overflow-x:auto;padding:.5em;color:#383a42;color:var(--mono-1,#383a42);background:#fafafa;background:var(--base,#fafafa)}
-.hljs-comment,.hljs-quote{color:#717277;color:var(--mono-3,#717277);font-style:italic}
-.hljs-doctag,.hljs-formula,.hljs-keyword{color:#a626a4;color:var(--hue-3,#a626a4)}
-.hljs-deletion,.hljs-name,.hljs-section,.hljs-selector-tag,.hljs-subst{color:#ca4706;color:var(--hue-5,#ca4706);font-weight:700}
-.hljs-literal{color:#0b76c5;color:var(--hue-1,#0b76c5)}
-.hljs-addition,.hljs-attribute,.hljs-meta-string,.hljs-regexp,.hljs-string{color:#42803c;color:var(--hue-4,#42803c)}
-.hljs-built_in,.hljs-class .hljs-title{color:#9a6a01;color:var(--hue-6-2,#9a6a01)}
-.hljs-attr,.hljs-number,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-pseudo,.hljs-template-variable,.hljs-type,.hljs-variable{color:#986801;color:var(--hue-6,#986801)}
-.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-symbol,.hljs-title{color:#336ae3;color:var(--hue-2,#336ae3)}
-.hljs-emphasis{font-style:italic}
-.hljs-strong{font-weight:700}
-.hljs-link{text-decoration:underline}
-</style>
+<meta name="description" content="Dit document geeft het begrippenkader voor het MIM metamodel.">
 <style>
 
   .sidelabel {
@@ -337,8 +279,7 @@ body:has(input[name=color-scheme][value=dark]:checked) .hljs{
       "authors": [
         "T. Preston-Werner"
       ],
-      "date": "June 2013",
-      "id": "semver"
+      "date": "June 2013"
     },
     "MIM12": {
       "id": "MIM12",
@@ -1473,72 +1414,477 @@ body:has(input[name=color-scheme][value=dark]:checked) .hljs{
     <hr title="Separator for header">
   </div>
 
-<section id="abstract" class="introductory"><h2>Samenvatting</h2><p>TODO: vul in abstract.md een abstract in.</p>
+<section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Dit document geeft het begrippenkader voor het MIM metamodel.</p>
 </section>
-<section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een document zonder officiële status.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#niet-normatieve-deel"><bdi class="secno">1. </bdi>Niet-normatieve deel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#een-subparagraaf"><bdi class="secno">1.1 </bdi>Een subparagraaf</a></li></ol></li><li class="tocline"><a class="tocxref" href="#meer-inhoud"><bdi class="secno">2. </bdi>Meer inhoud</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#definities"><bdi class="secno">2.1 </bdi>Definities</a></li><li class="tocline"><a class="tocxref" href="#afbeeldingen"><bdi class="secno">2.2 </bdi>Afbeeldingen</a></li><li class="tocline"><a class="tocxref" href="#referenties"><bdi class="secno">2.3 </bdi>Referenties</a></li><li class="tocline"><a class="tocxref" href="#optioneel"><bdi class="secno">2.4 </bdi>Optioneel</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mermaid-diagram"><bdi class="secno">3. </bdi>Mermaid diagram</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">4. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">A.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav>
+<section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een document zonder officiële status.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#begrippen"><bdi class="secno">1. </bdi>Begrippen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#beschouwingsdomein"><bdi class="secno">1.1 </bdi>Beschouwingsdomein</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#beschouwingsdomein-0"><bdi class="secno">1.1.1 </bdi>Beschouwingsdomein</a></li><li class="tocline"><a class="tocxref" href="#categorie"><bdi class="secno">1.1.2 </bdi>Categorie</a></li><li class="tocline"><a class="tocxref" href="#categorisch-kenmerk"><bdi class="secno">1.1.3 </bdi>Categorisch kenmerk</a></li><li class="tocline"><a class="tocxref" href="#complexe-waarde"><bdi class="secno">1.1.4 </bdi>Complexe waarde</a></li><li class="tocline"><a class="tocxref" href="#domeinobject"><bdi class="secno">1.1.5 </bdi>Domeinobject</a></li><li class="tocline"><a class="tocxref" href="#eigenschap"><bdi class="secno">1.1.6 </bdi>Eigenschap</a></li><li class="tocline"><a class="tocxref" href="#identificator"><bdi class="secno">1.1.7 </bdi>Identificator</a></li><li class="tocline"><a class="tocxref" href="#identificerend-kenmerk"><bdi class="secno">1.1.8 </bdi>Identificerend kenmerk</a></li><li class="tocline"><a class="tocxref" href="#kenmerk"><bdi class="secno">1.1.9 </bdi>Kenmerk</a></li><li class="tocline"><a class="tocxref" href="#letterlijke-waarde"><bdi class="secno">1.1.10 </bdi>Letterlijke waarde</a></li><li class="tocline"><a class="tocxref" href="#relatie"><bdi class="secno">1.1.11 </bdi>Relatie</a></li><li class="tocline"><a class="tocxref" href="#rol"><bdi class="secno">1.1.12 </bdi>Rol</a></li><li class="tocline"><a class="tocxref" href="#toegekend-identificerend-kenmerk"><bdi class="secno">1.1.13 </bdi>Toegekend identificerend kenmerk</a></li><li class="tocline"><a class="tocxref" href="#waarde"><bdi class="secno">1.1.14 </bdi>Waarde</a></li></ol></li><li class="tocline"><a class="tocxref" href="#typering-beschouwingsdomein"><bdi class="secno">1.2 </bdi>Typering beschouwingsdomein</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#attribuuttype"><bdi class="secno">1.2.1 </bdi>Attribuuttype</a></li><li class="tocline"><a class="tocxref" href="#attribuuttype-van-classificerende-aard"><bdi class="secno">1.2.2 </bdi>Attribuuttype van classificerende aard</a></li><li class="tocline"><a class="tocxref" href="#cardinaliteit"><bdi class="secno">1.2.3 </bdi>Cardinaliteit</a></li><li class="tocline"><a class="tocxref" href="#classificatieschema"><bdi class="secno">1.2.4 </bdi>Classificatieschema</a></li><li class="tocline"><a class="tocxref" href="#complex-waardetype"><bdi class="secno">1.2.5 </bdi>Complex waardetype</a></li><li class="tocline"><a class="tocxref" href="#conditie"><bdi class="secno">1.2.6 </bdi>Conditie</a></li><li class="tocline"><a class="tocxref" href="#datatype"><bdi class="secno">1.2.7 </bdi>Datatype</a></li><li class="tocline"><a class="tocxref" href="#formele-conditie"><bdi class="secno">1.2.8 </bdi>Formele conditie</a></li><li class="tocline"><a class="tocxref" href="#informele-conditie"><bdi class="secno">1.2.9 </bdi>Informele conditie</a></li><li class="tocline"><a class="tocxref" href="#lengte"><bdi class="secno">1.2.10 </bdi>Lengte</a></li><li class="tocline"><a class="tocxref" href="#objecttype"><bdi class="secno">1.2.11 </bdi>Objecttype</a></li><li class="tocline"><a class="tocxref" href="#populatie"><bdi class="secno">1.2.12 </bdi>Populatie</a></li><li class="tocline"><a class="tocxref" href="#relatietype"><bdi class="secno">1.2.13 </bdi>Relatietype</a></li><li class="tocline"><a class="tocxref" href="#rolinvulling"><bdi class="secno">1.2.14 </bdi>Rolinvulling</a></li><li class="tocline"><a class="tocxref" href="#verwoording"><bdi class="secno">1.2.15 </bdi>Verwoording</a></li><li class="tocline"><a class="tocxref" href="#waardetype"><bdi class="secno">1.2.16 </bdi>Waardetype</a></li></ol></li><li class="tocline"><a class="tocxref" href="#typering-verwerkingsdomein"><bdi class="secno">1.3 </bdi>Typering verwerkingsdomein</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#beschrijvend-gegevensobjecttype"><bdi class="secno">1.3.1 </bdi>Beschrijvend gegevensobjecttype</a></li><li class="tocline"><a class="tocxref" href="#direct-gegevenstype"><bdi class="secno">1.3.2 </bdi>Direct gegevenstype</a></li><li class="tocline"><a class="tocxref" href="#eenduidig-gegevensobjecttype"><bdi class="secno">1.3.3 </bdi>Eenduidig gegevensobjecttype</a></li><li class="tocline"><a class="tocxref" href="#gegevensgroeptype"><bdi class="secno">1.3.4 </bdi>Gegevensgroeptype</a></li><li class="tocline"><a class="tocxref" href="#gegevensobjecttype"><bdi class="secno">1.3.5 </bdi>Gegevensobjecttype</a></li><li class="tocline"><a class="tocxref" href="#gegevenstype"><bdi class="secno">1.3.6 </bdi>Gegevenstype</a></li><li class="tocline"><a class="tocxref" href="#indirect-gegevenstype"><bdi class="secno">1.3.7 </bdi>Indirect gegevenstype</a></li><li class="tocline"><a class="tocxref" href="#samengesteld-enkelvoudig-gegevenstype"><bdi class="secno">1.3.8 </bdi>Samengesteld enkelvoudig gegevenstype</a></li><li class="tocline"><a class="tocxref" href="#samengesteld-meervoudig-gegevenstype"><bdi class="secno">1.3.9 </bdi>Samengesteld meervoudig gegevenstype</a></li><li class="tocline"><a class="tocxref" href="#sleutel"><bdi class="secno">1.3.10 </bdi>Sleutel</a></li><li class="tocline"><a class="tocxref" href="#strikt-eenduidig-gegevensobjecttype"><bdi class="secno">1.3.11 </bdi>Strikt eenduidig gegevensobjecttype</a></li></ol></li><li class="tocline"><a class="tocxref" href="#verwerkingsdomein"><bdi class="secno">1.4 </bdi>Verwerkingsdomein</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#gegeven"><bdi class="secno">1.4.1 </bdi>Gegeven</a></li><li class="tocline"><a class="tocxref" href="#gegevensgroep"><bdi class="secno">1.4.2 </bdi>Gegevensgroep</a></li><li class="tocline"><a class="tocxref" href="#gegevensobject"><bdi class="secno">1.4.3 </bdi>Gegevensobject</a></li><li class="tocline"><a class="tocxref" href="#hoofdonderwerp"><bdi class="secno">1.4.4 </bdi>Hoofdonderwerp</a></li><li class="tocline"><a class="tocxref" href="#sleutelwaarde"><bdi class="secno">1.4.5 </bdi>Sleutelwaarde</a></li><li class="tocline"><a class="tocxref" href="#verwerkingsdomein-0"><bdi class="secno">1.4.6 </bdi>Verwerkingsdomein</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#begrippenlijst"><bdi class="secno">2. </bdi>Begrippenlijst</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">3. </bdi>Conformiteit</a></li></ol></nav>
 
 
-<section class="informative" id="niet-normatieve-deel"><div class="header-wrapper"><h2 id="x1-niet-normatieve-deel"><bdi class="secno">1. </bdi>Niet-normatieve deel</h2><a class="self-link" href="#niet-normatieve-deel" aria-label="Permalink for Section 1."></a></div><p><em>Dit onderdeel is niet-normatief.</em></p>
-<p>Bijvoorbeeld een introductie is niet normatief.</p>
-<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span><span class="issue-label">: index</span></div><p class="">
-Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config.js</code>.
-</p></div><section id="een-subparagraaf"><div class="header-wrapper"><h3 id="x1-1-een-subparagraaf"><bdi class="secno">1.1 </bdi>Een subparagraaf</h3><a class="self-link" href="#een-subparagraaf" aria-label="Permalink for Section 1.1"></a></div>
-<p>Hier staat een tabel. Als de juiste style gekozen is ziet deze er goed uit.</p>
+<section id="begrippen"><div class="header-wrapper"><h2 id="x1-begrippen"><bdi class="secno">1. </bdi>Begrippen</h2><a class="self-link" href="#begrippen" aria-label="Permalink for Section 1."></a></div>
+<section id="beschouwingsdomein"><div class="header-wrapper"><h3 id="x1-1-beschouwingsdomein"><bdi class="secno">1.1 </bdi>Beschouwingsdomein</h3><a class="self-link" href="#beschouwingsdomein" aria-label="Permalink for Section 1.1"></a></div>
+<section id="beschouwingsdomein-0"><div class="header-wrapper"><h4 id="x1-1-1-beschouwingsdomein"><bdi class="secno">1.1.1 </bdi>Beschouwingsdomein</h4><a class="self-link" href="#beschouwingsdomein-0" aria-label="Permalink for Section 1.1.1"></a></div>
+<p>Alternatieve aanduiding: <em>Universe of discourse</em>, <em>Domein</em>, <em>Beschouwde domein</em></p>
+<blockquote>
+<p>Een beschouwingsdomein is een afgebakend deel van de werkelijkheid dat we relevant vinden om te beschouwen vanuit een bepaalde context</p>
+</blockquote>
+</section><section id="categorie"><div class="header-wrapper"><h4 id="x1-1-2-categorie"><bdi class="secno">1.1.2 </bdi>Categorie</h4><a class="self-link" href="#categorie" aria-label="Permalink for Section 1.1.2"></a></div>
+<blockquote>
+<p>Een categorie is een aanduiding van een groep <a href="#domeinobject">domeinobjecten</a> die een kwaliteit gemeen hebben</p>
+</blockquote>
+<p>Toelichting: Voorbeelden van categorieën zijn: kleur, geslacht, type voertuig (auto, fiets, bus) of merk. Je kunt nog onderscheid maken tussen nominale categorische kenmerken (de categorieën hebben geen volgorde) en ordinale categorische kenmerken (er is een volgorde, bijvoorbeeld urgentie: laag, midden, hoog).</p>
+<p>Gerelateerd: <a href="#domeinobject">Domeinobject</a></p>
+</section><section id="categorisch-kenmerk"><div class="header-wrapper"><h4 id="x1-1-3-categorisch-kenmerk"><bdi class="secno">1.1.3 </bdi>Categorisch kenmerk</h4><a class="self-link" href="#categorisch-kenmerk" aria-label="Permalink for Section 1.1.3"></a></div>
+<blockquote>
+<p>Een categorisch <a href="#kenmerk">kenmerk</a> is een <a href="#kenmerk">kenmerk</a> van een <a href="#domeinobject">domeinobject</a> waar een <a href="#categorie">categorie</a> aan kan worden toegekend</p>
+</blockquote>
+<p>Specialisatie van: <a href="#kenmerk">Kenmerk</a></p>
+<p>Gerelateerd: <a href="#categorie">Categorie</a></p>
+</section><section id="complexe-waarde"><div class="header-wrapper"><h4 id="x1-1-4-complexe-waarde"><bdi class="secno">1.1.4 </bdi>Complexe waarde</h4><a class="self-link" href="#complexe-waarde" aria-label="Permalink for Section 1.1.4"></a></div>
+<blockquote>
+<p>Een complexe <a href="#waarde">waarde</a> is een <a href="#waarde">waarde</a> die bestaat uit een samenstel van afzonderlijk benoemde <a href="#letterlijke-waarde">letterlijke waarden</a> en/of <a href="#categorie">categorieën</a></p>
+</blockquote>
+<p>Specialisatie van: <a href="#waarde">Waarde</a></p>
+<p>Gerelateerd: <a href="#letterlijke-waarde">Letterlijke waarde</a>, <a href="#categorie">Categorie</a></p>
+</section><section id="domeinobject"><div class="header-wrapper"><h4 id="x1-1-5-domeinobject"><bdi class="secno">1.1.5 </bdi>Domeinobject</h4><a class="self-link" href="#domeinobject" aria-label="Permalink for Section 1.1.5"></a></div>
+<blockquote>
+<p>Een domeinobject is een onderscheidbaar en identificeerbaar iets in de beschouwde werkelijkheid</p>
+</blockquote>
+<p>Gerelateerd: <a href="#beschouwingsdomein">Beschouwingsdomein</a></p>
+</section><section id="eigenschap"><div class="header-wrapper"><h4 id="x1-1-6-eigenschap"><bdi class="secno">1.1.6 </bdi>Eigenschap</h4><a class="self-link" href="#eigenschap" aria-label="Permalink for Section 1.1.6"></a></div>
+<blockquote>
+<p>Een eigenschap is een <a href="#kenmerk">kenmerk</a> van een <a href="#domeinobject">domeinobject</a> waar uitsluitend een <a href="#waarde">waarde</a> aan kan worden toegekend</p>
+</blockquote>
+<p>Specialisatie van: <a href="#kenmerk">Kenmerk</a></p>
+<p>Gerelateerd: <a href="#waarde">Waarde</a></p>
+</section><section id="identificator"><div class="header-wrapper"><h4 id="x1-1-7-identificator"><bdi class="secno">1.1.7 </bdi>Identificator</h4><a class="self-link" href="#identificator" aria-label="Permalink for Section 1.1.7"></a></div>
+<blockquote>
+<p>Een identificator is een geheel van één of meerdere <a href="#identificerend-kenmerk">identificerende kenmerken</a> waarmee de identiteit van een <a href="#domeinobject">domeinobject</a> uniek kan worden vastgesteld</p>
+</blockquote>
+<p>Omvat: <a href="#identificerend-kenmerk">Identificerend kenmerk</a></p>
+<p>Gerelateerd: <a href="#domeinobject">Domeinobject</a></p>
+</section><section id="identificerend-kenmerk"><div class="header-wrapper"><h4 id="x1-1-8-identificerend-kenmerk"><bdi class="secno">1.1.8 </bdi>Identificerend kenmerk</h4><a class="self-link" href="#identificerend-kenmerk" aria-label="Permalink for Section 1.1.8"></a></div>
+<blockquote>
+<p>Een identificerend <a href="#kenmerk">kenmerk</a> is een <a href="#kenmerk">kenmerk</a> waarmee de identiteit van een <a href="#domeinobject">domeinobject</a> mede kan worden vastgesteld</p>
+</blockquote>
+<p>Toelichting: Het gaat bij de identificatie of dit domeinobject er eentje is (dus niet twee), dat het zo-eentje (en niet iets anders) is en dat het ook die ene is (en niet een andere). Het is denkbaar dat meerdere identificerende kenmerken gezamenlijk nodig zijn.</p>
+<p>Specialisatie van: <a href="#kenmerk">Kenmerk</a></p>
+<p>Gerelateerd: <a href="#domeinobject">Domeinobject</a></p>
+</section><section id="kenmerk"><div class="header-wrapper"><h4 id="x1-1-9-kenmerk"><bdi class="secno">1.1.9 </bdi>Kenmerk</h4><a class="self-link" href="#kenmerk" aria-label="Permalink for Section 1.1.9"></a></div>
+<blockquote>
+<p>Een kenmerk is een verschijnsel dat toegekend kan worden aan bepaalde <a href="#domeinobject">domeinobjecten</a>.</p>
+</blockquote>
+<p>Gerelateerd: <a href="#domeinobject">Domeinobject</a></p>
+</section><section id="letterlijke-waarde"><div class="header-wrapper"><h4 id="x1-1-10-letterlijke-waarde"><bdi class="secno">1.1.10 </bdi>Letterlijke waarde</h4><a class="self-link" href="#letterlijke-waarde" aria-label="Permalink for Section 1.1.10"></a></div>
+<blockquote>
+<p>Een letterlijke <a href="#waarde">waarde</a> is een <a href="#waarde">waarde</a> waarvan de betekenis letterlijk genomen moet worden, de <a href="#waarde">waarde</a> zelf en niets meer</p>
+</blockquote>
+<p>Specialisatie van: <a href="#waarde">Waarde</a></p>
+</section><section id="relatie"><div class="header-wrapper"><h4 id="x1-1-11-relatie"><bdi class="secno">1.1.11 </bdi>Relatie</h4><a class="self-link" href="#relatie" aria-label="Permalink for Section 1.1.11"></a></div>
+<blockquote>
+<p>Een relatie is een verbintenis tussen <a href="#domeinobject">domeinobjecten</a></p>
+</blockquote>
+<p>Gerelateerd: <a href="#domeinobject">Domeinobject</a></p>
+</section><section id="rol"><div class="header-wrapper"><h4 id="x1-1-12-rol"><bdi class="secno">1.1.12 </bdi>Rol</h4><a class="self-link" href="#rol" aria-label="Permalink for Section 1.1.12"></a></div>
+<blockquote>
+<p>Een rol is een <a href="#kenmerk">kenmerk</a> dat wordt vervuld door een <a href="#domeinobject">domeinobject</a> in een <a href="#relatie">relatie</a></p>
+</blockquote>
+<p>Specialisatie van: <a href="#kenmerk">Kenmerk</a></p>
+<p>Gerelateerd: <a href="#relatie">Relatie</a>, <a href="#domeinobject">Domeinobject</a></p>
+</section><section id="toegekend-identificerend-kenmerk"><div class="header-wrapper"><h4 id="x1-1-13-toegekend-identificerend-kenmerk"><bdi class="secno">1.1.13 </bdi>Toegekend identificerend kenmerk</h4><a class="self-link" href="#toegekend-identificerend-kenmerk" aria-label="Permalink for Section 1.1.13"></a></div>
+<blockquote>
+<p>Een toegekend identificerend kenmerk is een <a href="#identificerend-kenmerk">identificerend kenmerk</a> dat is toegekend aan een <a href="#domeinobject">domeinobject</a> om dit domeinobject uniek te kunnen identificeren</p>
+</blockquote>
+<p>Toelichting: Een toegekend identificerend kenmerk is feitelijk geen eigenschap van een domeinobject, maar wordt juist toegekend aan een domeinobject. Zo is een BSN nummer geen feitelijke eigenschap van een persoon, maar wordt deze wel toegewezen aan elke ingeschrevene in de Basisregistratie Personen. Ook bijvoorbeeld het VIN (Vehicle Identification Number) is geen feitelijke eigenschap van een voertuig, maar wordt aan een voertuig toegewezen.</p>
+<p>Specialisatie van: <a href="#identificerend-kenmerk">Identificerend kenmerk</a></p>
+</section><section id="waarde"><div class="header-wrapper"><h4 id="x1-1-14-waarde"><bdi class="secno">1.1.14 </bdi>Waarde</h4><a class="self-link" href="#waarde" aria-label="Permalink for Section 1.1.14"></a></div>
+<blockquote>
+<p>Een waarde is een tekenreeks of een aaneenschakeling van meerdere tekenreeksen</p>
+</blockquote>
+<p><em>Waarde wordt in het metamodel niet echt gedefinieerd, slechts letterlijke waarde en complexe waarde kennen een definitie. Bovenstaande definitie lijkt het beste te passen.</em></p>
+</section></section><section id="typering-beschouwingsdomein"><div class="header-wrapper"><h3 id="x1-2-typering-beschouwingsdomein"><bdi class="secno">1.2 </bdi>Typering beschouwingsdomein</h3><a class="self-link" href="#typering-beschouwingsdomein" aria-label="Permalink for Section 1.2"></a></div>
+<section id="attribuuttype"><div class="header-wrapper"><h4 id="x1-2-1-attribuuttype"><bdi class="secno">1.2.1 </bdi>Attribuuttype</h4><a class="self-link" href="#attribuuttype" aria-label="Permalink for Section 1.2.1"></a></div>
+<blockquote>
+<p>Een attribuuttype is een typering van een <a href="#kenmerk">kenmerk</a>, behorende tot een <a href="#objecttype">objecttype</a> of <a href="#relatietype">relatietype</a></p>
+</blockquote>
+<p>Gerelateerd: <a href="#relatietype">Relatietype</a>, <a href="#objecttype">Objecttype</a>, <a href="#kenmerk">Kenmerk</a></p>
+</section><section id="attribuuttype-van-classificerende-aard"><div class="header-wrapper"><h4 id="x1-2-2-attribuuttype-van-classificerende-aard"><bdi class="secno">1.2.2 </bdi>Attribuuttype van classificerende aard</h4><a class="self-link" href="#attribuuttype-van-classificerende-aard" aria-label="Permalink for Section 1.2.2"></a></div>
+<blockquote>
+<p>Een <a href="#attribuuttype">attribuuttype</a> van classificerende aard is een <a href="#attribuuttype">attribuuttype</a> als typering van een <a href="#categorisch-kenmerk">categorisch kenmerk</a></p>
+</blockquote>
+<p>Specialisatie van: <a href="#attribuuttype">Attribuuttype</a></p>
+<p>Gerelateerd: <a href="#categorisch-kenmerk">Categorisch kenmerk</a></p>
+</section><section id="cardinaliteit"><div class="header-wrapper"><h4 id="x1-2-3-cardinaliteit"><bdi class="secno">1.2.3 </bdi>Cardinaliteit</h4><a class="self-link" href="#cardinaliteit" aria-label="Permalink for Section 1.2.3"></a></div>
+<blockquote>
+<p>Een cardinaliteit is een <a href="#conditie">conditie</a> waarbij van een <a href="#kenmerk">kenmerk</a> is gesteld hoeveel invullingen er voor één <a href="#domeinobject">domeinobject</a> minimaal en maximaal zijn</p>
+</blockquote>
+<p>Specialisatie van: <a href="#conditie">Conditie</a></p>
+<p>Gerelateerd: <a href="#domeinobject">Domeinobject</a>, <a href="#kenmerk">Kenmerk</a></p>
+</section><section id="classificatieschema"><div class="header-wrapper"><h4 id="x1-2-4-classificatieschema"><bdi class="secno">1.2.4 </bdi>Classificatieschema</h4><a class="self-link" href="#classificatieschema" aria-label="Permalink for Section 1.2.4"></a></div>
+<blockquote>
+<p>Een classificatieschema is een systematische ordening van <a href="#domeinobject">domeinobjecten</a> in <a href="#categorie">categorieën</a></p>
+</blockquote>
+<p>Omvat: <a href="#categorie">Categorie</a></p>
+<p>Gerelateerd: <a href="#domeinobject">Domeinobject</a></p>
+</section><section id="complex-waardetype"><div class="header-wrapper"><h4 id="x1-2-5-complex-waardetype"><bdi class="secno">1.2.5 </bdi>Complex waardetype</h4><a class="self-link" href="#complex-waardetype" aria-label="Permalink for Section 1.2.5"></a></div>
+<blockquote>
+<p>Een complex waardetype is een typering van gelijksoortige <a href="#complexe-waarde">complexe waarden</a></p>
+</blockquote>
+<p>Gerelateerd: <a href="#complexe-waarde">Complexe waarde</a></p>
+</section><section id="conditie"><div class="header-wrapper"><h4 id="x1-2-6-conditie"><bdi class="secno">1.2.6 </bdi>Conditie</h4><a class="self-link" href="#conditie" aria-label="Permalink for Section 1.2.6"></a></div>
+<blockquote>
+<p>Een conditie is een noodzakelijke voorwaarde die moet gelden voor een typering</p>
+</blockquote>
+</section><section id="datatype"><div class="header-wrapper"><h4 id="x1-2-7-datatype"><bdi class="secno">1.2.7 </bdi>Datatype</h4><a class="self-link" href="#datatype" aria-label="Permalink for Section 1.2.7"></a></div>
+<blockquote>
+<p>Een datatype is een <a href="#conditie">conditie</a> waarbij van een <a href="#kenmerk">kenmerk</a> of <a href="#waarde">waarde</a> is gesteld wat voor datatype de <a href="#waarde">waarde</a> of invulling van dat <a href="#kenmerk">kenmerk</a> mag zijn</p>
+</blockquote>
+<p>Toelichting: Een datatype kan zowel op een specifiek kenmerk van toepassing zijn (bijvoorbeel dat geboortedatum een datum is), maar ook voor gelijksoortige waarden (bijvoorbeeld dat een bedrag een getal is)</p>
+<p>Specialisatie van: <a href="#conditie">Conditie</a></p>
+<p>Gerelateerd: <a href="#waarde">Waarde</a>, <a href="#kenmerk">Kenmerk</a></p>
+</section><section id="formele-conditie"><div class="header-wrapper"><h4 id="x1-2-8-formele-conditie"><bdi class="secno">1.2.8 </bdi>Formele conditie</h4><a class="self-link" href="#formele-conditie" aria-label="Permalink for Section 1.2.8"></a></div>
+<blockquote>
+<p>Een formele <a href="#conditie">conditie</a> is een <a href="#conditie">conditie</a> die beschreven is in een machine-interpreteerbare taal</p>
+</blockquote>
+<p>Toelichting: Machine-interpreteerbaar betekent dat een machine (geautomatiseerd) kan vaststellen of aan de conditie is voldaan of juist niet</p>
+<p>Specialisatie van: <a href="#conditie">Conditie</a></p>
+</section><section id="informele-conditie"><div class="header-wrapper"><h4 id="x1-2-9-informele-conditie"><bdi class="secno">1.2.9 </bdi>Informele conditie</h4><a class="self-link" href="#informele-conditie" aria-label="Permalink for Section 1.2.9"></a></div>
+<blockquote>
+<p>Een informele <a href="#conditie">conditie</a> is een <a href="#conditie">conditie</a> die beschreven is in natuurlijk taal</p>
+</blockquote>
+<p>Toelichting: Een natuurlijke taal is een taal die mensen gebruiken in onderlinge communicatie. Zo'n taal is per definitie leesbaar voor mensen. Hoewel de taal leesbaar kan zijn voor machines, zullen machines de taal niet (volledig) kunnen interpreteren.</p>
+<p>Specialisatie van: <a href="#conditie">Conditie</a></p>
+</section><section id="lengte"><div class="header-wrapper"><h4 id="x1-2-10-lengte"><bdi class="secno">1.2.10 </bdi>Lengte</h4><a class="self-link" href="#lengte" aria-label="Permalink for Section 1.2.10"></a></div>
+<blockquote>
+<p>Een lengte is een <a href="#conditie">conditie</a> waarbij van een <a href="#kenmerk">kenmerk</a> of <a href="#waarde">waarde</a> is gesteld hoe lang de <a href="#waarde">waarde</a> of invulling van dat <a href="#kenmerk">kenmerk</a> mag zijn</p>
+</blockquote>
+<p>Toelichting: Een lengte kan zowel op een specifiek kenmerk van toepassing zijn (bijvoorbeeld de lengte die een voornaam-kenmerk mag hebben), maar ook voor gelijksoortige waarden (bijvoorbeeld de lengte die een postcode-waarde mag hebben)</p>
+<p>Specialisatie van: <a href="#conditie">Conditie</a></p>
+<p>Gerelateerd: <a href="#waarde">Waarde</a>, <a href="#kenmerk">Kenmerk</a></p>
+</section><section id="objecttype"><div class="header-wrapper"><h4 id="x1-2-11-objecttype"><bdi class="secno">1.2.11 </bdi>Objecttype</h4><a class="self-link" href="#objecttype" aria-label="Permalink for Section 1.2.11"></a></div>
+<blockquote>
+<p>Een objecttype is een typering van gelijksoortige <a href="#domeinobject">domeinobjecten</a></p>
+</blockquote>
+<p>Gerelateerd: <a href="#domeinobject">Domeinobject</a></p>
+</section><section id="populatie"><div class="header-wrapper"><h4 id="x1-2-12-populatie"><bdi class="secno">1.2.12 </bdi>Populatie</h4><a class="self-link" href="#populatie" aria-label="Permalink for Section 1.2.12"></a></div>
+<blockquote>
+<p>Een POPULATIE is de verzameling van alle mogelijke <a href="#domeinobject">domeinobjecten</a> die in de beschouwde werkelijkheid te onderscheiden zijn als <a href="#objecttype">objecttype</a></p>
+</blockquote>
+<p>Gerelateerd: <a href="#objecttype">Objecttype</a>, <a href="#domeinobject">Domeinobject</a></p>
+</section><section id="relatietype"><div class="header-wrapper"><h4 id="x1-2-13-relatietype"><bdi class="secno">1.2.13 </bdi>Relatietype</h4><a class="self-link" href="#relatietype" aria-label="Permalink for Section 1.2.13"></a></div>
+<blockquote>
+<p>Een relatietype is een typering van gelijksoortige <a href="#relatie">relaties</a></p>
+</blockquote>
+</section><section id="rolinvulling"><div class="header-wrapper"><h4 id="x1-2-14-rolinvulling"><bdi class="secno">1.2.14 </bdi>Rolinvulling</h4><a class="self-link" href="#rolinvulling" aria-label="Permalink for Section 1.2.14"></a></div>
+<blockquote>
+<p>Een rolinvulling is een beschrijving van de invulling van een <a href="#rol">rol</a> in een <a href="#relatietype">relatietype</a> door voorkomens van een <a href="#objecttype">objecttype</a></p>
+</blockquote>
+<p>Gerelateerd: <a href="#objecttype">Objecttype</a>, <a href="#relatietype">Relatietype</a>, <a href="#rol">Rol</a></p>
+</section><section id="verwoording"><div class="header-wrapper"><h4 id="x1-2-15-verwoording"><bdi class="secno">1.2.15 </bdi>Verwoording</h4><a class="self-link" href="#verwoording" aria-label="Permalink for Section 1.2.15"></a></div>
+<blockquote>
+<p>Een verwoording is een beschrijving van de manier waarop een voorkomen van een <a href="#relatietype">relatietype</a> kan worden uitgedrukt in een propositie</p>
+</blockquote>
+<p>Gerelateerd: <a href="#relatietype">Relatietype</a></p>
+</section><section id="waardetype"><div class="header-wrapper"><h4 id="x1-2-16-waardetype"><bdi class="secno">1.2.16 </bdi>Waardetype</h4><a class="self-link" href="#waardetype" aria-label="Permalink for Section 1.2.16"></a></div>
+<blockquote>
+<p>Een waardetype is een typering van gelijksoortige <a href="#waarde">waarden</a></p>
+</blockquote>
+<p>Gerelateerd: <a href="#waarde">Waarde</a></p>
+</section></section><section id="typering-verwerkingsdomein"><div class="header-wrapper"><h3 id="x1-3-typering-verwerkingsdomein"><bdi class="secno">1.3 </bdi>Typering verwerkingsdomein</h3><a class="self-link" href="#typering-verwerkingsdomein" aria-label="Permalink for Section 1.3"></a></div>
+<section id="beschrijvend-gegevensobjecttype"><div class="header-wrapper"><h4 id="x1-3-1-beschrijvend-gegevensobjecttype"><bdi class="secno">1.3.1 </bdi>Beschrijvend gegevensobjecttype</h4><a class="self-link" href="#beschrijvend-gegevensobjecttype" aria-label="Permalink for Section 1.3.1"></a></div>
+<blockquote>
+<p>Een beschrijvend <a href="#gegevensobjecttype">gegevensobjecttype</a> is een <a href="#gegevensobjecttype">gegevensobjecttype</a> met precies één <a href="#hoofdonderwerp">hoofdonderwerp</a>, zonder dat de <a href="#sleutel">sleutel</a> van dat <a href="#hoofdonderwerp">hoofdonderwerp</a> bekend is</p>
+</blockquote>
+<p>Specialisatie van: <a href="#gegevensobjecttype">Gegevensobjecttype</a></p>
+<p>Gerelateerd: <a href="#sleutel">Sleutel</a>, <a href="#hoofdonderwerp">Hoofdonderwerp</a></p>
+</section><section id="direct-gegevenstype"><div class="header-wrapper"><h4 id="x1-3-2-direct-gegevenstype"><bdi class="secno">1.3.2 </bdi>Direct gegevenstype</h4><a class="self-link" href="#direct-gegevenstype" aria-label="Permalink for Section 1.3.2"></a></div>
+<blockquote>
+<p>Een direct <a href="#gegevenstype">gegevenstype</a> is een <a href="#gegevenstype">gegevenstype</a> over één <a href="#kenmerk">kenmerk</a> van een <a href="#domeinobject">domeinobject</a>, vastgelegd bij een <a href="">gegevensobjectype</a> dat dit <a href="#domeinobject">domeinobject</a> als <a href="#hoofdonderwerp">hoofdonderwerp</a> heeft</p>
+</blockquote>
+<p>Toelichting: Een voorbeeld is werknemer.geboortedatum. Geboortedatum is een eigenschap van een werknemer (feitelijk een eigenschap van een mens, maar aangezien elke werknemer een mens is, is dit ook een eigenschap van een werknemer)</p>
+<p>Specialisatie van: <a href="#gegevenstype">Gegevenstype</a></p>
+<p>Gerelateerd: <a href="#hoofdonderwerp">Hoofdonderwerp</a></p>
+</section><section id="eenduidig-gegevensobjecttype"><div class="header-wrapper"><h4 id="x1-3-3-eenduidig-gegevensobjecttype"><bdi class="secno">1.3.3 </bdi>Eenduidig gegevensobjecttype</h4><a class="self-link" href="#eenduidig-gegevensobjecttype" aria-label="Permalink for Section 1.3.3"></a></div>
+<blockquote>
+<p>Een eenduidig <a href="#gegevensobjecttype">gegevensobjecttype</a> is een <a href="#gegevensobjecttype">gegevensobjecttype</a> met precies één <a href="#hoofdonderwerp">hoofdonderwerp</a> waarvan de <a href="#sleutel">sleutel</a> bekend is</p>
+</blockquote>
+<p>Specialisatie van: <a href="#gegevensobjecttype">Gegevensobjecttype</a></p>
+<p>Gerelateerd: <a href="#sleutel">Sleutel</a>, <a href="#hoofdonderwerp">Hoofdonderwerp</a></p>
+</section><section id="gegevensgroeptype"><div class="header-wrapper"><h4 id="x1-3-4-gegevensgroeptype"><bdi class="secno">1.3.4 </bdi>Gegevensgroeptype</h4><a class="self-link" href="#gegevensgroeptype" aria-label="Permalink for Section 1.3.4"></a></div>
+<blockquote>
+<p>Een gegevensgroeptype is een typering van gelijksoortige <a href="#gegevensgroep">gegevensgroepen</a></p>
+</blockquote>
+<p>Gerelateerd: <a href="#gegevensgroep">Gegevensgroep</a></p>
+</section><section id="gegevensobjecttype"><div class="header-wrapper"><h4 id="x1-3-5-gegevensobjecttype"><bdi class="secno">1.3.5 </bdi>Gegevensobjecttype</h4><a class="self-link" href="#gegevensobjecttype" aria-label="Permalink for Section 1.3.5"></a></div>
+<blockquote>
+<p>Een gegevensobjecttype is een typering van gelijksoortige <a href="#gegevensobject">gegevensobjecten</a></p>
+</blockquote>
+<p>Gerelateerd: <a href="#gegevensobject">Gegevensobject</a></p>
+</section><section id="gegevenstype"><div class="header-wrapper"><h4 id="x1-3-6-gegevenstype"><bdi class="secno">1.3.6 </bdi>Gegevenstype</h4><a class="self-link" href="#gegevenstype" aria-label="Permalink for Section 1.3.6"></a></div>
+<blockquote>
+<p>Een gegevenstype is een typering van gelijksoortige <a href="#gegeven">gegevens</a></p>
+</blockquote>
+<p>Gerelateerd: <a href="#gegeven">Gegeven</a></p>
+</section><section id="indirect-gegevenstype"><div class="header-wrapper"><h4 id="x1-3-7-indirect-gegevenstype"><bdi class="secno">1.3.7 </bdi>Indirect gegevenstype</h4><a class="self-link" href="#indirect-gegevenstype" aria-label="Permalink for Section 1.3.7"></a></div>
+<blockquote>
+<p>Een indirect <a href="#gegevenstype">gegevenstype</a> is een <a href="#gegevenstype">gegevenstype</a> over één <a href="#kenmerk">kenmerk</a> van een <a href="#domeinobject">domeinobject</a>, vastgelegd bij een <a href="#gegevensobjecttype">gegevensobjecttype</a> dat dit <a href="#domeinobject">domeinobject</a> niet als <a href="#hoofdonderwerp">hoofdonderwerp</a> heeft</p>
+</blockquote>
+<p>Toelichting: Een voorbeeld is werknemer.woonplaatsnaam. Woonplaatsnaam is geen eigenschap van een werknemer, maar een eigenschap van een woonplaats. De indirectie is (dus) werknemer &gt; woont in woonplaats, woonplaats.naam</p>
+<p>Specialisatie van: <a href="#gegevenstype">Gegevenstype</a></p>
+<p>Gerelateerd: <a href="#hoofdonderwerp">Hoofdonderwerp</a></p>
+</section><section id="samengesteld-enkelvoudig-gegevenstype"><div class="header-wrapper"><h4 id="x1-3-8-samengesteld-enkelvoudig-gegevenstype"><bdi class="secno">1.3.8 </bdi>Samengesteld enkelvoudig gegevenstype</h4><a class="self-link" href="#samengesteld-enkelvoudig-gegevenstype" aria-label="Permalink for Section 1.3.8"></a></div>
+<blockquote>
+<p>Een samengesteld enkelvoudig <a href="#gegevenstype">gegevenstype</a> is een <a href="#gegevenstype">gegevenstype</a> over één <a href="#kenmerk">kenmerk</a> van meerdere <a href="#domeinobject">domeinobjecten</a></p>
+</blockquote>
+<p>Toelichting: Een voorbeeld is aantal werknemers of totaalbedrag orderregels</p>
+<p>Specialisatie van: <a href="#gegevenstype">Gegevenstype</a></p>
+</section><section id="samengesteld-meervoudig-gegevenstype"><div class="header-wrapper"><h4 id="x1-3-9-samengesteld-meervoudig-gegevenstype"><bdi class="secno">1.3.9 </bdi>Samengesteld meervoudig gegevenstype</h4><a class="self-link" href="#samengesteld-meervoudig-gegevenstype" aria-label="Permalink for Section 1.3.9"></a></div>
+<blockquote>
+<p>Een samengesteld meervoudig <a href="#gegevenstype">gegevenstype</a> is een <a href="#gegevenstype">gegevenstype</a> over meerdere <a href="">kenmerken</a> van één of meerdere <a href="#domeinobject">domeinobjecten</a></p>
+</blockquote>
+<p>Toelichting: Een voorbeeld is percentage ziekteverzuim (van één persoon), of juist percentage ziekteverzuim van een groep personen</p>
+<p>Specialisatie van: <a href="#gegevenstype">Gegevenstype</a></p>
+</section><section id="sleutel"><div class="header-wrapper"><h4 id="x1-3-10-sleutel"><bdi class="secno">1.3.10 </bdi>Sleutel</h4><a class="self-link" href="#sleutel" aria-label="Permalink for Section 1.3.10"></a></div>
+<blockquote>
+<p>Een sleutel is een groep van één of meer <a href="#gegevenstype">gegevenstypen</a> waarmee een unieke aanduiding voor het <a href="#hoofdonderwerp">hoofdonderwerp</a> van een <a href="#gegevensobject">gegevensobject</a> kan worden gevormd</p>
+</blockquote>
+<p>Omvat: <a href="#gegevenstype">Gegevenstype</a></p>
+<p>Gerelateerd: <a href="#gegevensobject">Gegevensobject</a>, <a href="#hoofdonderwerp">Hoofdonderwerp</a></p>
+</section><section id="strikt-eenduidig-gegevensobjecttype"><div class="header-wrapper"><h4 id="x1-3-11-strikt-eenduidig-gegevensobjecttype"><bdi class="secno">1.3.11 </bdi>Strikt eenduidig gegevensobjecttype</h4><a class="self-link" href="#strikt-eenduidig-gegevensobjecttype" aria-label="Permalink for Section 1.3.11"></a></div>
+<blockquote>
+<p>Een strikt eenduidig gegevensobjecttype is een <a href="#gegevensobjecttype">gegevensobjecttype</a> over alleen <a href="">kenmerken</a> van het <a href="#hoofdonderwerp">hoofdonderwerp</a> waarvan de <a href="#sleutel">sleutel</a> bekend is</p>
+</blockquote>
+<p>Specialisatie van: <a href="#eenduidig-gegevensobjecttype">Eenduidig gegevensobjecttype</a></p>
+</section></section><section id="verwerkingsdomein"><div class="header-wrapper"><h3 id="x1-4-verwerkingsdomein"><bdi class="secno">1.4 </bdi>Verwerkingsdomein</h3><a class="self-link" href="#verwerkingsdomein" aria-label="Permalink for Section 1.4"></a></div>
+<section id="gegeven"><div class="header-wrapper"><h4 id="x1-4-1-gegeven"><bdi class="secno">1.4.1 </bdi>Gegeven</h4><a class="self-link" href="#gegeven" aria-label="Permalink for Section 1.4.1"></a></div>
+<blockquote>
+<p>Een gegeven is een vastgelegde uitdrukking over hetzij een <a href="#kenmerk">kenmerk</a> van een <a href="#domeinobject">domeinobject</a> dan wel een <a href="#relatie">relatie</a> tussen <a href="#domeinobject">domeinobjecten</a></p>
+</blockquote>
+<p>Gerelateerd: <a href="#relatie">Relatie</a>, <a href="#kenmerk">Kenmerk</a>, <a href="#domeinobject">Domeinobject</a></p>
+</section><section id="gegevensgroep"><div class="header-wrapper"><h4 id="x1-4-2-gegevensgroep"><bdi class="secno">1.4.2 </bdi>Gegevensgroep</h4><a class="self-link" href="#gegevensgroep" aria-label="Permalink for Section 1.4.2"></a></div>
+<blockquote>
+<p>Een gegevensgroep is een groepering van <a href="#gegeven">gegevens</a></p>
+</blockquote>
+<p>Toelichting: Een gegevensgroep is simpelweg een groepje van gegevens.</p>
+<p>Omvat: <a href="#gegeven">Gegeven</a></p>
+</section><section id="gegevensobject"><div class="header-wrapper"><h4 id="x1-4-3-gegevensobject"><bdi class="secno">1.4.3 </bdi>Gegevensobject</h4><a class="self-link" href="#gegevensobject" aria-label="Permalink for Section 1.4.3"></a></div>
+<blockquote>
+<p>Een gegevensobject is een onderscheidbaar geheel van <a href="#gegeven">gegevens</a> die als kleinste eenheid wordt verwerkt</p>
+</blockquote>
+<p>Omvat: <a href="#gegeven">Gegeven</a></p>
+</section><section id="hoofdonderwerp"><div class="header-wrapper"><h4 id="x1-4-4-hoofdonderwerp"><bdi class="secno">1.4.4 </bdi>Hoofdonderwerp</h4><a class="self-link" href="#hoofdonderwerp" aria-label="Permalink for Section 1.4.4"></a></div>
+<blockquote>
+<p>Een hoofdonderwerp is een <a href="#domeinobject">domeinobject</a> waarover een <a href="#gegevensobject">gegevensobject</a> in hoofdzaak gaat</p>
+</blockquote>
+<p>Specialisatie van: <a href="#domeinobject">Domeinobject</a></p>
+</section><section id="sleutelwaarde"><div class="header-wrapper"><h4 id="x1-4-5-sleutelwaarde"><bdi class="secno">1.4.5 </bdi>Sleutelwaarde</h4><a class="self-link" href="#sleutelwaarde" aria-label="Permalink for Section 1.4.5"></a></div>
+<blockquote>
+<p>Een sleutelwaarde is de invulling van één of meerdere <a href="">kenmerken</a> die gezamenlijk één enkel <a href="#domeinobject">domeinobject</a> uniek aanduiden</p>
+</blockquote>
+<p>Gerelateerd: <a href="#domeinobject">Domeinobject</a>, <a href="#kenmerk">Kenmerk</a></p>
+</section><section id="verwerkingsdomein-0"><div class="header-wrapper"><h4 id="x1-4-6-verwerkingsdomein"><bdi class="secno">1.4.6 </bdi>Verwerkingsdomein</h4><a class="self-link" href="#verwerkingsdomein-0" aria-label="Permalink for Section 1.4.6"></a></div>
+<p>Alternatieve aanduiding: <em>Gegevensdomein</em>, <em>Gegevensverwerkingsdomein</em></p>
+<blockquote>
+<p>Een verwerkingsdomein is een afgebakend deel van de werkelijkheid waarin gegevens worden verwerkt</p>
+</blockquote>
+<p>Toelichting: Het verwerkingsdomein is het domein van de gegevens. Aangezien gegevens gaan over de dingen in het beschouwingsdomein (en niet over zichzelf), is het verwerkingsdomein altijd te onderscheiden van het beschouwingsdomein: het zijn twee verschillende domeinen. Wel hangen ze sterk samen: het verwerkingsdomein bevat de gegevens die gaan over het beschouwingsdomein. Het verwerkingsdomein en het beschouwingsdomein zijn dan ook vaak gelijkvormig. Zo kun je het hebben over een «persoon», maar ook over «persoonsgegevens». Een persoon heeft eigenschappen, bijvoorbeeld een leeftijd, en gegevens over die leeftijd zijn vervolgens weer onderdeel van de persoonsgegevens.</p>
+</section></section></section>
+<section id="begrippenlijst"><div class="header-wrapper"><h2 id="x2-begrippenlijst"><bdi class="secno">2. </bdi>Begrippenlijst</h2><a class="self-link" href="#begrippenlijst" aria-label="Permalink for Section 2."></a></div>
 <table>
 <thead>
 <tr>
-<th>Sleutel</th>
-<th>Waarde</th>
+<th>Begrip</th>
+<th>Definitie</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>key</td>
-<td>Deze waarde bevat een lange tekst zodat te zien is of de kolombreedte dynamisch wordt bepaald</td>
+<td><a href="#attribuuttype">Attribuuttype</a></td>
+<td>Een attribuuttype is een typering van een <a href="#kenmerk">kenmerk</a>, behorende tot een <a href="#objecttype">objecttype</a> of <a href="#relatietype">relatietype</a></td>
+</tr>
+<tr>
+<td><a href="#attribuuttype-van-classificerende-aard">Attribuuttype van classificerende aard</a></td>
+<td>Een attribuuttype van classificerende aard is een <a href="#attribuuttype">attribuuttype</a> als typering van een <a href="#categorisch-kenmerk">categorisch kenmerk</a></td>
+</tr>
+<tr>
+<td><a href="#beschouwingsdomein">Beschouwingsdomein</a></td>
+<td>Een beschouwingsdomein is een afgebakend deel van de werkelijkheid dat we relevant vinden om te beschouwen vanuit een bepaalde context</td>
+</tr>
+<tr>
+<td><a href="#beschrijvend-gegevensobjecttype">Beschrijvend gegevensobjecttype</a></td>
+<td>Een beschrijvend gegevensobjecttype is een <a href="#gegevensobjecttype">gegevensobjecttype</a> met precies één <a href="#hoofdonderwerp">hoofdonderwerp</a>, zonder dat de <a href="#sleutel">sleutel</a> van dat <a href="#hoofdonderwerp">hoofdonderwerp</a> bekend is</td>
+</tr>
+<tr>
+<td><a href="#cardinaliteit">Cardinaliteit</a></td>
+<td>Een cardinaliteit is een <a href="#conditie">conditie</a> waarbij van een <a href="#kenmerk">kenmerk</a> is gesteld hoeveel invullingen er voor één <a href="#domeinobject">domeinobject</a> minimaal en maximaal zijn</td>
+</tr>
+<tr>
+<td><a href="#categorie">Categorie</a></td>
+<td>Een categorie is een aanduiding van een groep <a href="#domeinobject">domeinobjecten</a> die een kwaliteit gemeen hebben</td>
+</tr>
+<tr>
+<td><a href="#categorisch-kenmerk">Categorisch kenmerk</a></td>
+<td>Een categorisch kenmerk is een <a href="#kenmerk">kenmerk</a> van een <a href="#domeinobject">domeinobject</a> waar een <a href="#categorie">categorie</a> aan kan worden toegekend</td>
+</tr>
+<tr>
+<td><a href="#classificatieschema">Classificatieschema</a></td>
+<td>Een classificatieschema is een systematische ordening van <a href="#domeinobject">domeinobjecten</a> in <a href="#categorie">categorieën</a></td>
+</tr>
+<tr>
+<td><a href="#complex-waardetype">Complex waardetype</a></td>
+<td>Een complex waardetype is een typering van gelijksoortige <a href="#complexe-waarde">complexe waarden</a></td>
+</tr>
+<tr>
+<td><a href="#complexe-waarde">Complexe waarde</a></td>
+<td>Een complexe waarde is een <a href="#waarde">waarde</a> die bestaat uit een samenstel van afzonderlijk benoemde <a href="#letterlijke-waarde">letterlijke waarden</a> en/of <a href="#categorie">categorieën</a></td>
+</tr>
+<tr>
+<td><a href="#conditie">Conditie</a></td>
+<td>Een conditie is een noodzakelijke voorwaarde die moet gelden voor een typering</td>
+</tr>
+<tr>
+<td><a href="#datatype">Datatype</a></td>
+<td>Een datatype is een <a href="#conditie">conditie</a> waarbij van een <a href="#kenmerk">kenmerk</a> of <a href="#waarde">waarde</a> is gesteld wat voor datatype de <a href="#waarde">waarde</a> of invulling van dat <a href="#kenmerk">kenmerk</a> mag zijn</td>
+</tr>
+<tr>
+<td><a href="#direct-gegevenstype">Direct gegevenstype</a></td>
+<td>Een direct gegevenstype is een <a href="#gegevenstype">gegevenstype</a> over één <a href="#kenmerk">kenmerk</a> van een <a href="#domeinobject">domeinobject</a>, vastgelegd bij een <a href="">gegevensobjectype</a> dat dit <a href="#domeinobject">domeinobject</a> als <a href="#hoofdonderwerp">hoofdonderwerp</a> heeft</td>
+</tr>
+<tr>
+<td><a href="#domeinobject">Domeinobject</a></td>
+<td>Een domeinobject is een onderscheidbaar en identificeerbaar iets in de beschouwde werkelijkheid</td>
+</tr>
+<tr>
+<td><a href="#eenduidig-gegevensobjecttype">Eenduidig gegevensobjecttype</a></td>
+<td>Een eenduidig gegevensobjecttype is een <a href="#gegevensobjecttype">gegevensobjecttype</a> met precies één <a href="#hoofdonderwerp">hoofdonderwerp</a> waarvan de <a href="#sleutel">sleutel</a> bekend is</td>
+</tr>
+<tr>
+<td><a href="#eigenschap">Eigenschap</a></td>
+<td>Een eigenschap is een <a href="#kenmerk">kenmerk</a> van een <a href="#domeinobject">domeinobject</a> waar uitsluitend een <a href="#waarde">waarde</a> aan kan worden toegekend</td>
+</tr>
+<tr>
+<td><a href="#formele-conditie">Formele conditie</a></td>
+<td>Een formele conditie is een <a href="#conditie">conditie</a> die beschreven is in een machine-interpreteerbare taal</td>
+</tr>
+<tr>
+<td><a href="#gegeven">Gegeven</a></td>
+<td>Een gegeven is een vastgelegde uitdrukking over hetzij een <a href="#kenmerk">kenmerk</a> van een <a href="#domeinobject">domeinobject</a> dan wel een <a href="#relatie">relatie</a> tussen <a href="#domeinobject">domeinobjecten</a></td>
+</tr>
+<tr>
+<td><a href="#gegevensgroep">Gegevensgroep</a></td>
+<td>Een gegevensgroep is een groepering van <a href="#gegeven">gegevens</a></td>
+</tr>
+<tr>
+<td><a href="#gegevensgroeptype">Gegevensgroeptype</a></td>
+<td>Een gegevensgroeptype is een typering van gelijksoortige <a href="#gegevensgroep">gegevensgroepen</a></td>
+</tr>
+<tr>
+<td><a href="#gegevensobject">Gegevensobject</a></td>
+<td>Een gegevensobject is een onderscheidbaar geheel van <a href="#gegeven">gegevens</a> die als kleinste eenheid wordt verwerkt</td>
+</tr>
+<tr>
+<td><a href="#gegevensobjecttype">Gegevensobjecttype</a></td>
+<td>Een gegevensobjecttype is een typering van gelijksoortige <a href="#gegevensobject">gegevensobjecten</a></td>
+</tr>
+<tr>
+<td><a href="#gegevenstype">Gegevenstype</a></td>
+<td>Een gegevenstype is een typering van gelijksoortige <a href="#gegeven">gegevens</a></td>
+</tr>
+<tr>
+<td><a href="#hoofdonderwerp">Hoofdonderwerp</a></td>
+<td>Een hoofdonderwerp is een <a href="#domeinobject">domeinobject</a> waarover een <a href="#gegevensobject">gegevensobject</a> in hoofdzaak gaat</td>
+</tr>
+<tr>
+<td><a href="#identificator">Identificator</a></td>
+<td>Een identificator is een geheel van één of meerdere <a href="#identificerend-kenmerk">identificerende kenmerken</a> waarmee de identiteit van een <a href="#domeinobject">domeinobject</a> uniek kan worden vastgesteld</td>
+</tr>
+<tr>
+<td><a href="#identificerend-kenmerk">Identificerend kenmerk</a></td>
+<td>Een identificerend kenmerk is een <a href="#kenmerk">kenmerk</a> waarmee de identiteit van een <a href="#domeinobject">domeinobject</a> mede kan worden vastgesteld</td>
+</tr>
+<tr>
+<td><a href="#indirect-gegevenstype">Indirect gegevenstype</a></td>
+<td>Een indirect gegevenstype is een gegevenstype over één <a href="#kenmerk">kenmerk</a> van een <a href="#domeinobject">domeinobject</a>, vastgelegd bij een <a href="#gegevensobjecttype">gegevensobjecttype</a> dat dit <a href="#domeinobject">domeinobject</a> niet als <a href="#hoofdonderwerp">hoofdonderwerp</a> heeft</td>
+</tr>
+<tr>
+<td><a href="#informele-conditie">Informele conditie</a></td>
+<td>Een informele conditie is een <a href="#conditie">conditie</a> die beschreven is in natuurlijk taal</td>
+</tr>
+<tr>
+<td><a href="#kenmerk">Kenmerk</a></td>
+<td>Een kenmerk is een verschijnsel dat toegekend kan worden aan bepaalde <a href="#domeinobject">domeinobjecten</a>.</td>
+</tr>
+<tr>
+<td><a href="#lengte">Lengte</a></td>
+<td>Een lengte is een <a href="#conditie">conditie</a> waarbij van een <a href="#kenmerk">kenmerk</a> of <a href="#waarde">waarde</a> is gesteld hoe lang de <a href="#waarde">waarde</a> of invulling van dat <a href="#kenmerk">kenmerk</a> mag zijn</td>
+</tr>
+<tr>
+<td><a href="#letterlijke-waarde">Letterlijke waarde</a></td>
+<td>Een letterlijke waarde is een <a href="#waarde">waarde</a> waarvan de betekenis letterlijk genomen moet worden, de waarde zelf en niets meer</td>
+</tr>
+<tr>
+<td><a href="#objecttype">Objecttype</a></td>
+<td>Een objecttype is een typering van gelijksoortige <a href="#domeinobject">domeinobjecten</a></td>
+</tr>
+<tr>
+<td><a href="#populatie">Populatie</a></td>
+<td>Een POPULATIE is de verzameling van alle mogelijke <a href="#domeinobject">domeinobjecten</a> die in de beschouwde werkelijkheid te onderscheiden zijn als <a href="#objecttype">objecttype</a></td>
+</tr>
+<tr>
+<td><a href="#relatie">Relatie</a></td>
+<td>Een relatie is een verbintenis tussen <a href="#domeinobject">domeinobjecten</a></td>
+</tr>
+<tr>
+<td><a href="#relatietype">Relatietype</a></td>
+<td>Een relatietype is een typering van gelijksoortige <a href="#relatie">relaties</a></td>
+</tr>
+<tr>
+<td><a href="#rol">Rol</a></td>
+<td>Een rol is een <a href="#kenmerk">kenmerk</a> dat wordt vervuld door een <a href="#domeinobject">domeinobject</a> in een <a href="#relatie">relatie</a></td>
+</tr>
+<tr>
+<td><a href="#rolinvulling">Rolinvulling</a></td>
+<td>Een rolinvulling is een beschrijving van de invulling van een <a href="#rol">rol</a> in een <a href="#relatietype">relatietype</a> door voorkomens van een <a href="#objecttype">objecttype</a></td>
+</tr>
+<tr>
+<td><a href="#samengesteld-enkelvoudig-gegevenstype">Samengesteld enkelvoudig gegevenstype</a></td>
+<td>Een samengesteld enkelvoudig gegevenstype is een <a href="#gegevenstype">gegevenstype</a> over één <a href="#kenmerk">kenmerk</a> van meerdere <a href="#domeinobject">domeinobjecten</a></td>
+</tr>
+<tr>
+<td><a href="#samengesteld-meervoudig-gegevenstype">Samengesteld meervoudig gegevenstype</a></td>
+<td>Een samengesteld meervoudig gegevenstype is een <a href="#gegevenstype">gegevenstype</a> over meerdere <a href="">kenmerken</a> van één of meerdere <a href="#domeinobject">domeinobjecten</a></td>
+</tr>
+<tr>
+<td><a href="#sleutel">Sleutel</a></td>
+<td>Een sleutel is een groep van één of meer <a href="#gegevenstype">gegevenstypen</a> waarmee een unieke aanduiding voor het <a href="#hoofdonderwerp">hoofdonderwerp</a> van een <a href="#gegevensobject">gegevensobject</a> kan worden gevormd</td>
+</tr>
+<tr>
+<td><a href="#sleutelwaarde">Sleutelwaarde</a></td>
+<td>Een sleutelwaarde is de invulling van één of meerdere <a href="">kenmerken</a> die gezamenlijk één enkel <a href="#domeinobject">domeinobject</a> uniek aanduiden</td>
+</tr>
+<tr>
+<td><a href="#strik-eenduidig-gegevensobjecttype">Strik eenduidig gegevensobjecttype</a></td>
+<td>Een strikt eenduidig gegevensobjecttype is een <a href="#gegevensobjecttype">gegevensobjecttype</a> over alleen <a href="">kenmerken</a> van het <a href="#hoofdonderwerp">hoofdonderwerp</a> waarvan de <a href="#sleutel">sleutel</a> bekend is</td>
+</tr>
+<tr>
+<td><a href="#toegekend-identificerend-kenmerk">Toegekend identificerend kenmerk</a></td>
+<td>Een toegekend identificerend kenmerk is een <a href="#identificerend-kenmerk">identificerend kenmerk</a> dat is toegekend aan een <a href="#domeinobject">domeinobject</a> om dit domeinobject uniek te kunnen identificeren</td>
+</tr>
+<tr>
+<td><a href="#verwerkingsdomein">Verwerkingsdomein</a></td>
+<td>Een verwerkingsdomein is een afgebakend deel van de werkelijkheid waarin gegevens worden verwerkt</td>
+</tr>
+<tr>
+<td><a href="#verwoording">Verwoording</a></td>
+<td>Een verwoording is een beschrijving van de manier waarop een voorkomen van een <a href="#relatietype">relatietype</a> kan worden uitgedrukt in een propositie</td>
+</tr>
+<tr>
+<td><a href="#waarde">Waarde</a></td>
+<td>Een waarde is een tekenreeks of een aaneenschakeling van meerdere tekenreeksen</td>
+</tr>
+<tr>
+<td><a href="#waardetype">Waardetype</a></td>
+<td>Een waardetype is een typering van gelijksoortige <a href="#waarde">waarden</a></td>
 </tr>
 </tbody></table>
-</section></section>
-<section id="meer-inhoud"><div class="header-wrapper"><h2 id="x2-meer-inhoud"><bdi class="secno">2. </bdi>Meer inhoud</h2><a class="self-link" href="#meer-inhoud" aria-label="Permalink for Section 2."></a></div>
-<section id="definities"><div class="header-wrapper"><h3 id="x2-1-definities"><bdi class="secno">2.1 </bdi>Definities</h3><a class="self-link" href="#definities" aria-label="Permalink for Section 2.1"></a></div>
-<p><dfn id="dfn-definitie" tabindex="0" aria-haspopup="dialog">Definitie</dfn>: Een definitie is een beschrijving van een woord. Een ander woord voor <em>definitie</em> is betekenis of beschrijving.</p>
-</section><section id="afbeeldingen"><div class="header-wrapper"><h3 id="x2-2-afbeeldingen"><bdi class="secno">2.2 </bdi>Afbeeldingen</h3><a class="self-link" href="#afbeeldingen" aria-label="Permalink for Section 2.2"></a></div>
-<p>Afbeeldingen krijgen een nummer en vermelding in de figurenlijst <a href="#tof" data-matched-text="[[[#tof]]]" class="sec-ref">Index</a>.</p>
-<p>
-      </p><figure id="fig-onderschrift">
-        <img src="media/Bomos_levenscyclus.svg" alt="Tekstueel alternatief voor toegankelijkheid">
-        <figcaption><a class="self-link" href="#fig-onderschrift">Figuur <bdi class="figno">1</bdi></a> <span class="fig-title">Onderschrift</span></figcaption>
-      </figure>
-    <p></p>
-</section><section id="referenties"><div class="header-wrapper"><h3 id="x2-3-referenties"><bdi class="secno">2.3 </bdi>Referenties</h3><a class="self-link" href="#referenties" aria-label="Permalink for Section 2.3"></a></div>
-<p>Referenties kunnen op drie plaatsen staan:</p>
-<ul>
-<li>In SpecRef <a href="https://www.specref.org/">Specref</a></li>
-<li>In de organisatie configuraties [<cite><a class="bibref" data-link-type="biblio" href="#bib-semver" title="Semantic Versioning 2.0.0">SemVer</a></cite>]. Deze zijn te vinden op <a href="https://github.com/Geonovum/tools.geostandaarden.nl/blob/main/tools.geostandaarden.nl/respec/config/geonovum-config.js">tools.geostandaarden.nl</a>.</li>
-<li>In het document, zoals [<cite><a class="bibref" data-link-type="biblio" href="#bib-mim12" title="MIM - Metamodel Informatie Modellering (Versie 1.2)">MIM12</a></cite>]. Deze zijn te vinden in <code>js/config.js</code>.</li>
-</ul>
-<p>Referentie uit organisatie lijst [<cite><a class="bibref" data-link-type="biblio" href="#bib-semver" title="Semantic Versioning 2.0.0">SemVer</a></cite>] of de locale lijst [<cite><a class="bibref" data-link-type="biblio" href="#bib-mim12" title="MIM - Metamodel Informatie Modellering (Versie 1.2)">MIM12</a></cite>]. Lijst staat in <code>organisation-config.js</code>. Alleen referenties die in de tekst voorkomen worden getoond.</p>
-<p>We gebruiken een <a href="#dfn-definitie" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-definitie-1">definitie</a> om een woord te omschrijven.</p>
-</section><section id="optioneel"><div class="header-wrapper"><h3 id="x2-4-optioneel"><bdi class="secno">2.4 </bdi>Optioneel</h3><a class="self-link" href="#optioneel" aria-label="Permalink for Section 2.4"></a></div>
-<p>De onderstaande secties (<em>Conformiteit</em> e.d.) zijn optioneel, zie <code>index.html</code>:</p>
-<pre><code aria-busy="false" class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"abstract"</span> <span class="hljs-attr">data-include-format</span>=<span class="hljs-string">"markdown"</span> <span class="hljs-attr">data-include</span>=<span class="hljs-string">"abstract.md"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"sotd"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span><span class="hljs-comment">&lt;!-- Wordt automatisch gevuld --&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-include-format</span>=<span class="hljs-string">"markdown"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"informative"</span> <span class="hljs-attr">data-include</span>=<span class="hljs-string">"ch01.md"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-include-format</span>=<span class="hljs-string">"markdown"</span> <span class="hljs-attr">data-include</span>=<span class="hljs-string">"ch02.md"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-comment">&lt;!-- Hieronder optionele secties. Worden automatisch gevuld --&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">'conformance'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">'tof'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"index"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-</code></pre>
-</section></section>
-<section id="mermaid-diagram"><div class="header-wrapper"><h2 id="x3-mermaid-diagram"><bdi class="secno">3. </bdi>Mermaid diagram</h2><a class="self-link" href="#mermaid-diagram" aria-label="Permalink for Section 3."></a></div>
-<figure id="Mermaidvoorbeeld"><pre><svg id="diagram-1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="max-width: 128.234375px;" viewBox="0 0 128.234375 248"><style>
-#diagram-1 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#diagram-1 .error-icon{fill:#552222;}#diagram-1 .error-text{fill:#552222;stroke:#552222;}#diagram-1 .edge-thickness-normal{stroke-width:2px;}#diagram-1 .edge-thickness-thick{stroke-width:3.5px;}#diagram-1 .edge-pattern-solid{stroke-dasharray:0;}#diagram-1 .edge-pattern-dashed{stroke-dasharray:3;}#diagram-1 .edge-pattern-dotted{stroke-dasharray:2;}#diagram-1 .marker{fill:#333333;stroke:#333333;}#diagram-1 .marker.cross{stroke:#333333;}#diagram-1 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#diagram-1 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#diagram-1 .cluster-label text{fill:#333;}#diagram-1 .cluster-label span{color:#333;}#diagram-1 .label text,#diagram-1 span{fill:#333;color:#333;}#diagram-1 .node rect,#diagram-1 .node circle,#diagram-1 .node ellipse,#diagram-1 .node polygon,#diagram-1 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#diagram-1 .node .label{text-align:center;}#diagram-1 .node.clickable{cursor:pointer;}#diagram-1 .arrowheadPath{fill:#333333;}#diagram-1 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#diagram-1 .flowchart-link{stroke:#333333;fill:none;}#diagram-1 .edgeLabel{background-color:#e8e8e8;text-align:center;}#diagram-1 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#diagram-1 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#diagram-1 .cluster text{fill:#333;}#diagram-1 .cluster span{color:#333;}#diagram-1 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#diagram-1 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}
-</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-B" id="L-A-B" style="opacity: 1;"><path class="path" d="M48.55859375,47.77154964846383L44.354817708333336,52.64295804038653C40.151041666666664,57.514366432309224,31.743489583333332,67.25718321615462,27.539713541666668,76.29525827474397C23.3359375,85.33333333333333,23.3359375,93.66666666666667,23.3359375,97.83333333333333L23.3359375,102" marker-end="url(#arrowhead14)" style="fill:none"></path><defs><marker id="arrowhead14" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-A LE-C" id="L-A-C" style="opacity: 1;"><path class="path" d="M79.23046875,47.77154964846383L83.43424479166667,52.64295804038653C87.63802083333333,57.514366432309224,96.04557291666667,67.25718321615462,100.24934895833333,76.29525827474397C104.453125,85.33333333333333,104.453125,93.66666666666667,104.453125,97.83333333333333L104.453125,102" marker-end="url(#arrowhead15)" style="fill:none"></path><defs><marker id="arrowhead15" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-D" id="L-B-D" style="opacity: 1;"><path class="path" d="M23.3359375,146L23.3359375,150.16666666666666C23.3359375,154.33333333333334,23.3359375,162.66666666666666,27.465494791666668,171.6187357539568C31.595052083333332,180.57080484124694,39.854166666666664,190.14160968249382,43.983723958333336,194.92701210311728L48.11328125,199.71241452374073" marker-end="url(#arrowhead16)" style="fill:none"></path><defs><marker id="arrowhead16" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-C LE-D" id="L-C-D" style="opacity: 1;"><path class="path" d="M104.453125,146L104.453125,150.16666666666666C104.453125,154.33333333333334,104.453125,162.66666666666666,100.32356770833333,171.6187357539568C96.19401041666667,180.57080484124694,87.93489583333333,190.14160968249382,83.80533854166667,194.92701210311728L79.67578125,199.71241452374073" marker-end="url(#arrowhead17)" style="fill:none"></path><defs><marker id="arrowhead17" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A' L-LE-B"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-C" class="edgeLabel L-LS-A' L-LE-C"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-D" class="edgeLabel L-LS-B' L-LE-D"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-C-D" class="edgeLabel L-LS-C' L-LE-D"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-8" transform="translate(63.89453125,30)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.3359375" y="-22" width="30.671875" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.3359375,-12)"><foreignObject width="10.671875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">A</div></foreignObject></g></g></g><g class="node default" id="flowchart-B-9" transform="translate(23.3359375,124)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.3359375" y="-22" width="30.671875" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.3359375,-12)"><foreignObject width="10.671875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">B</div></foreignObject></g></g></g><g class="node default" id="flowchart-C-11" transform="translate(104.453125,124)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.78125" y="-22" width="31.5625" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.78125,-12)"><foreignObject width="11.5625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">C</div></foreignObject></g></g></g><g class="node default" id="flowchart-D-13" transform="translate(63.89453125,218)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.78125" y="-22" width="31.5625" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.78125,-12)"><foreignObject width="11.5625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">D</div></foreignObject></g></g></g></g></g></g></svg></pre>
-<figcaption><a class="self-link" href="#Mermaidvoorbeeld">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">Mermaid voorbeeld</span></figcaption>
-</figure></section>
-
- 
+</section>
 
 
 
@@ -1546,7 +1892,9 @@ Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config
 
 
 
-<section id="conformance"><div class="header-wrapper"><h2 id="x4-conformiteit"><bdi class="secno">4. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 4."></a></div><p>Naast onderdelen die als niet-normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet-normatief. Verder is alles in dit document normatief.</p>
+
+
+<section id="conformance"><div class="header-wrapper"><h2 id="x3-conformiteit"><bdi class="secno">3. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 3."></a></div><p>Naast onderdelen die als niet-normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet-normatief. Verder is alles in dit document normatief.</p>
 <section id="tof">
 <section id="index" class="appendix"><div class="header-wrapper"><h4 id="index-0">Index</h4><a class="self-link" href="#index" aria-label="Permalink for this Appendix"></a></div>
 
@@ -1555,44 +1903,16 @@ Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config
 <section id="index-defined-here">
     <div class="header-wrapper"><h5 id="termen-gedefinieerd-door-deze-specificatie">Termen gedefinieerd door deze specificatie</h5><a class="self-link" href="#index-defined-here" aria-label="Permalink for this Appendix"></a></div>
     <ul class="index">
-    <li>
-      <a class="index-term" href="#dfn-definitie">Definitie</a> 
-    <span class="print-only">§2.1</span></li>
+    
   </ul>
   </section><section id="index-defined-elsewhere">
     <div class="header-wrapper"><h5 id="termen-gedefinieerd-door-verwijzing">Termen gedefinieerd door verwijzing</h5><a class="self-link" href="#index-defined-elsewhere" aria-label="Permalink for this Appendix"></a></div>
     <ul class="index">
     
   </ul>
-  </section></section><h1>Lijst met figuren</h1><ul class="tof">
-        <li class="tofline">
-    <a class="tocxref" href="#fig-onderschrift"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">Onderschrift</span></a>
-  </li><li class="tofline">
-    <a class="tocxref" href="#Mermaidvoorbeeld"><span class="self-link">Figuur <bdi class="figno">2</bdi></span> <span class="fig-title">Mermaid voorbeeld</span></a>
-  </li>
-      </ul></section></section><section id="references" class="appendix"><div class="header-wrapper"><h2 id="a-referenties"><bdi class="secno">A. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix A."></a></div><section id="normatieve-referenties">
-    <div class="header-wrapper"><h3 id="a-1-normatieve-referenties"><bdi class="secno">A.1 </bdi>Normatieve referenties</h3><a class="self-link" href="#normatieve-referenties" aria-label="Permalink for Appendix A.1"></a></div>
-    <dl class="bibliography"><dt id="bib-mim12">[MIM12]</dt><dd>
-      <a href="https://docs.geostandaarden.nl/mim/def-st-mim-20240613/"><cite>MIM - Metamodel Informatie Modellering (Versie 1.2)</cite></a>.  Geonovum. 2024-06-13. Definitief. URL: <a href="https://docs.geostandaarden.nl/mim/def-st-mim-20240613/">https://docs.geostandaarden.nl/mim/def-st-mim-20240613/</a>
-    </dd><dt id="bib-semver">[SemVer]</dt><dd>
-      <a href="https://semver.org"><cite>Semantic Versioning 2.0.0</cite></a>. T. Preston-Werner. June 2013. URL: <a href="https://semver.org">https://semver.org</a>
-    </dd></dl>
-  </section></section><p role="navigation" id="back-to-top">
+  </section></section></section></section><p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Terug naar boven">↑</abbr></a>
-  </p><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-definitie" aria-label="Links in this document to definition: Definitie">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="#dfn-definitie" aria-label="Permalink for definition: Definitie. Activate to close this dialog.">Permalink</a>
-         
-        
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-      <a href="#ref-for-dfn-definitie-1" title="§ 2.3 Referenties">§ 2.3 Referenties</a> 
-    </li>
-  </ul>
-    </div><script id="respec-dfn-panel">(() => {
+  </p><script id="respec-dfn-panel">(() => {
 // @ts-check
 if (document.respec) {
   document.respec.ready.then(setupPanel);
