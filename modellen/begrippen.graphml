@@ -2208,7 +2208,7 @@
                             visible="true"
                             width="65.541015625"
                             x="2.0"
-                            y="30.1328125">Een verwerkingsdomein is een afgebakend deel van de werkelijkheid waarin gegevens worden verwerkt<y:LabelModel>
+                            y="30.1328125">Een verwerkingsdomein is een afgebakend deel van de werkelijkheid waarin gegevens worden verwerkt over het beschouwingsdomein<y:LabelModel>
                      <y:ErdAttributesNodeLabelModel/>
                   </y:LabelModel>
                   <y:ModelParameter>
@@ -4926,6 +4926,43 @@
       <edge source="http://begrippen.mim-standaard.nl/mimbegrip/Domeinobject"
             target="http://begrippen.mim-standaard.nl/mimbegrip/Beschouwingsdomein">
          <data key="d7">urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Domeinobjecthttp://www.w3.org/2004/02/skos/core#relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Beschouwingsdomein</data>
+         <data key="d10">
+            <y:PolyLineEdge>
+               <y:LineStyle color="#000000" type="line" width="1.0"/>
+               <y:Arrows source="none" target="standard"/>
+               <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel"
+                            distance="2.0"
+                            fontFamily="Dialog"
+                            fontSize="12"
+                            fontStyle="plain"
+                            hasLineColor="false"
+                            modelName="custom"
+                            preferredPlacement="anywhere"
+                            ratio="0.5"
+                            textColor="#000000"
+                            visible="true">is gerelateerd aan<y:LabelModel>
+                     <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+                  </y:LabelModel>
+                  <y:ModelParameter>
+                     <y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center"
+                                                     ratio="0.5"
+                                                     segment="0"/>
+                  </y:ModelParameter>
+                  <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute"
+                                                  angleRotationOnRightSide="co"
+                                                  distance="-1.0"
+                                                  frozen="true"
+                                                  placement="anywhere"
+                                                  side="anywhere"
+                                                  sideReference="relative_to_edge_flow"/>
+               </y:EdgeLabel>
+               <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+         </data>
+      </edge>
+      <edge source="http://begrippen.mim-standaard.nl/mimbegrip/Verwerkingsdomein"
+            target="http://begrippen.mim-standaard.nl/mimbegrip/Beschouwingsdomein">
+         <data key="d7">urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Verwerkingsdomeinhttp://www.w3.org/2004/02/skos/core#relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Beschouwingsdomein</data>
          <data key="d10">
             <y:PolyLineEdge>
                <y:LineStyle color="#000000" type="line" width="1.0"/>
