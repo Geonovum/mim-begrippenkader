@@ -867,7 +867,20 @@
                           name="Verwerkingsdomein"
                           visibility="public">
             <ownedComment xmi:id="-def1"
-                          body="Een verwerkingsdomein is een afgebakend deel van de werkelijkheid waarin gegevens worden verwerkt"/>
+                          body="Een verwerkingsdomein is een afgebakend deel van de werkelijkheid waarin gegevens worden verwerkt over het beschouwingsdomein"/>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Verwerkingsdomeinskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Beschouwingsdomein:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Verwerkingsdomeinskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Beschouwingsdomein"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Beschouwingsdomein"/>
+            </ownedAttribute>
          </packagedElement>
          <packagedElement xmi:type="uml:Class"
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegrip/Gegevensobject"
@@ -1935,6 +1948,26 @@
                       isDerivedUnion="false"
                       aggregation="none">
                <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Domeinobject"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Verwerkingsdomeinskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Beschouwingsdomein"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Verwerkingsdomeinskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Beschouwingsdomein:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Verwerkingsdomeinskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Beschouwingsdomein:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Verwerkingsdomeinskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Beschouwingsdomein:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Verwerkingsdomeinskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Beschouwingsdomein"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Verwerkingsdomein"/>
             </ownedEnd>
          </packagedElement>
          <packagedElement xmi:type="uml:Association"
