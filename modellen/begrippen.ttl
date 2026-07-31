@@ -313,8 +313,9 @@ mimbegrip:AttribuuttypeVanClassificerendeAard a skos:Concept;
   rdfs:label "Attribuuttype van classificerende aard"@nl;
   skos:prefLabel "Attribuuttype van classificerende aard"@nl;
   skos:inScheme schema:TyperingBeschouwingsdomein;
-  skos:definition "Een attribuuttype van classificerende aard is een [attribuuttype] als typering van een [categorisch kenmerk]"@nl;
+  skos:definition "Een attribuuttype van classificerende aard is een [attribuuttype] waarmee een nadere subtypering aan een [objecttype] wordt toegekend."@nl;
   skosthes:broaderGeneric mimbegrip:Attribuuttype;
+  skos:related mimbegrip:Objecttype;
   skos:related mimbegrip:CategorischKenmerk;
 .
 
@@ -453,67 +454,4 @@ mimbegrip:Gegevensgroeptype a skos:Concept;
   skos:inScheme schema:TyperingVerwerkingsdomein;
   skos:definition "Een gegevensgroeptype is een typering van gelijksoortige [gegevensgroepen]"@nl;
   skos:related mimbegrip:Gegevensgroep;
-.
-
-mimbegrip:EenduidigGegevensobjecttype a skos:Concept;
-  rdfs:label "Eenduidig gegevensobjecttype"@nl;
-  skos:prefLabel "Eenduidig gegevensobjecttype"@nl;
-  skos:inScheme schema:TyperingVerwerkingsdomein;
-  skos:definition "Een eenduidig gegevensobjecttype is een [gegevensobjecttype] met precies één [hoofdonderwerp] waarvan de [sleutel] bekend is"@nl;
-  skosthes:broaderGeneric mimbegrip:Gegevensobjecttype;
-  skos:related mimbegrip:Hoofdonderwerp;
-  skos:related mimbegrip:Sleutel;
-.
-
-mimbegrip:StriktEenduidigGegevensobjecttype a skos:Concept;
-  rdfs:label "Strik eenduidig gegevensobjecttype"@nl;
-  skos:prefLabel "Strikt eenduidig gegevensobjecttype"@nl;
-  skos:inScheme schema:TyperingVerwerkingsdomein;
-  skos:definition "Een strikt eenduidig gegevensobjecttype is een [gegevensobjecttype] over alleen [kenmerken] van het [hoofdonderwerp] waarvan de [sleutel] bekend is"@nl;
-  skosthes:broaderGeneric mimbegrip:EenduidigGegevensobjecttype;
-.
-
-mimbegrip:BeschrijvendGegevensobjecttype a skos:Concept;
-  rdfs:label "Beschrijvend gegevensobjecttype"@nl;
-  skos:prefLabel "Beschrijvend gegevensobjecttype"@nl;
-  skos:inScheme schema:TyperingVerwerkingsdomein;
-  skos:definition "Een beschrijvend gegevensobjecttype is een [gegevensobjecttype] met precies één [hoofdonderwerp], zonder dat de [sleutel] van dat [hoofdonderwerp] bekend is"@nl;
-  skosthes:broaderGeneric mimbegrip:Gegevensobjecttype;
-  skos:related mimbegrip:Hoofdonderwerp;
-  skos:related mimbegrip:Sleutel;
-.
-
-mimbegrip:DirectGegevenstype a skos:Concept;
-  rdfs:label "Direct gegevenstype"@nl;
-  skos:prefLabel "Direct gegevenstype"@nl;
-  skos:inScheme schema:TyperingVerwerkingsdomein;
-  skos:definition "Een direct gegevenstype is een [gegevenstype] over één [kenmerk] van een [domeinobject], vastgelegd bij een [gegevensobjectype] dat dit [domeinobject] als [hoofdonderwerp] heeft"@nl;
-  skos:scopeNote "Een voorbeeld is werknemer.geboortedatum. Geboortedatum is een eigenschap van een werknemer (feitelijk een eigenschap van een mens, maar aangezien elke werknemer een mens is, is dit ook een eigenschap van een werknemer)"@nl;
-  skosthes:broaderGeneric mimbegrip:Gegevenstype;
-  skos:related mimbegrip:Hoofdonderwerp;
-.
-mimbegrip:IndirectGegevenstype a skos:Concept;
-  rdfs:label "Indirect gegevenstype"@nl;
-  skos:prefLabel "Indirect gegevenstype"@nl;
-  skos:inScheme schema:TyperingVerwerkingsdomein;
-  skos:definition "Een indirect gegevenstype is een gegevenstype over één [kenmerk] van een [domeinobject], vastgelegd bij een [gegevensobjecttype] dat dit [domeinobject] niet als [hoofdonderwerp] heeft"@nl;
-  skos:scopeNote "Een voorbeeld is werknemer.woonplaatsnaam. Woonplaatsnaam is geen eigenschap van een werknemer, maar een eigenschap van een woonplaats. De indirectie is (dus) werknemer > woont in woonplaats, woonplaats.naam"@nl;
-  skosthes:broaderGeneric mimbegrip:Gegevenstype;
-  skos:related mimbegrip:Hoofdonderwerp;
-.
-mimbegrip:SamengesteldEnkelvoudigGegevenstype a skos:Concept;
-  rdfs:label "Samengesteld enkelvoudig gegevenstype"@nl;
-  skos:prefLabel "Samengesteld enkelvoudig gegevenstype"@nl;
-  skos:inScheme schema:TyperingVerwerkingsdomein;
-  skos:definition "Een samengesteld enkelvoudig gegevenstype is een [gegevenstype] over één [kenmerk] van meerdere [domeinobjecten]"@nl;
-  skos:scopeNote "Een voorbeeld is aantal werknemers of totaalbedrag orderregels"@nl;
-  skosthes:broaderGeneric mimbegrip:Gegevenstype;
-.
-mimbegrip:SamengesteldMeervoudigGegevenstype a skos:Concept;
-  rdfs:label "Samengesteld meervoudig gegevenstype"@nl;
-  skos:prefLabel "Samengesteld meervoudig gegevenstype"@nl;
-  skos:inScheme schema:TyperingVerwerkingsdomein;
-  skos:definition "Een samengesteld meervoudig gegevenstype is een [gegevenstype] over meerdere [kenmerken] van één of meerdere [domeinobjecten]"@nl;
-  skos:scopeNote "Een voorbeeld is percentage ziekteverzuim (van één persoon), of juist percentage ziekteverzuim van een groep personen"@nl;
-  skosthes:broaderGeneric mimbegrip:Gegevenstype;
 .

@@ -7,42 +7,6 @@
       <packagedElement xmi:type="uml:Package" xmi:id="urn:name:package" name="Begrippen"
                        visibility="public">
          <packagedElement xmi:type="uml:Class"
-                          xmi:id="http://begrippen.mim-standaard.nl/mimbegrip/EenduidigGegevensobjecttype"
-                          name="Eenduidig gegevensobjecttype"
-                          visibility="public">
-            <ownedComment xmi:id="-def1"
-                          body="Een eenduidig gegevensobjecttype is een [gegevensobjecttype] met precies één [hoofdonderwerp] waarvan de [sleutel] bekend is"/>
-            <ownedAttribute xmi:type="uml:Property"
-                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/EenduidigGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Sleutel:trgt"
-                            visibility="public"
-                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/EenduidigGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Sleutel"
-                            isStatic="false"
-                            isReadOnly="false"
-                            isDerived="false"
-                            isOrdered="false"
-                            isUnique="true"
-                            isDerivedUnion="false"
-                            aggregation="none">
-               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Sleutel"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:type="uml:Property"
-                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/EenduidigGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp:trgt"
-                            visibility="public"
-                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/EenduidigGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp"
-                            isStatic="false"
-                            isReadOnly="false"
-                            isDerived="false"
-                            isOrdered="false"
-                            isUnique="true"
-                            isDerivedUnion="false"
-                            aggregation="none">
-               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp"/>
-            </ownedAttribute>
-            <generalization xmi:type="uml:Generalization"
-                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/EenduidigGegevensobjecttypeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/Gegevensobjecttype"
-                            general="http://begrippen.mim-standaard.nl/mimbegrip/Gegevensobjecttype"/>
-         </packagedElement>
-         <packagedElement xmi:type="uml:Class"
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegrip/Gegevenstype"
                           name="Gegevenstype"
                           visibility="public">
@@ -114,52 +78,6 @@
             <generalization xmi:type="uml:Generalization"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/InformeleConditieskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/Conditie"
                             general="http://begrippen.mim-standaard.nl/mimbegrip/Conditie"/>
-         </packagedElement>
-         <packagedElement xmi:type="uml:Class"
-                          xmi:id="http://begrippen.mim-standaard.nl/mimbegrip/BeschrijvendGegevensobjecttype"
-                          name="Beschrijvend gegevensobjecttype"
-                          visibility="public">
-            <ownedComment xmi:id="-def1"
-                          body="Een beschrijvend gegevensobjecttype is een [gegevensobjecttype] met precies één [hoofdonderwerp], zonder dat de [sleutel] van dat [hoofdonderwerp] bekend is"/>
-            <ownedAttribute xmi:type="uml:Property"
-                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/BeschrijvendGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Sleutel:trgt"
-                            visibility="public"
-                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/BeschrijvendGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Sleutel"
-                            isStatic="false"
-                            isReadOnly="false"
-                            isDerived="false"
-                            isOrdered="false"
-                            isUnique="true"
-                            isDerivedUnion="false"
-                            aggregation="none">
-               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Sleutel"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:type="uml:Property"
-                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/BeschrijvendGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp:trgt"
-                            visibility="public"
-                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/BeschrijvendGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp"
-                            isStatic="false"
-                            isReadOnly="false"
-                            isDerived="false"
-                            isOrdered="false"
-                            isUnique="true"
-                            isDerivedUnion="false"
-                            aggregation="none">
-               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp"/>
-            </ownedAttribute>
-            <generalization xmi:type="uml:Generalization"
-                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/BeschrijvendGegevensobjecttypeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/Gegevensobjecttype"
-                            general="http://begrippen.mim-standaard.nl/mimbegrip/Gegevensobjecttype"/>
-         </packagedElement>
-         <packagedElement xmi:type="uml:Class"
-                          xmi:id="http://begrippen.mim-standaard.nl/mimbegrip/StriktEenduidigGegevensobjecttype"
-                          name="Strik eenduidig gegevensobjecttype"
-                          visibility="public">
-            <ownedComment xmi:id="-def1"
-                          body="Een strikt eenduidig gegevensobjecttype is een [gegevensobjecttype] over alleen [kenmerken] van het [hoofdonderwerp] waarvan de [sleutel] bekend is"/>
-            <generalization xmi:type="uml:Generalization"
-                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/StriktEenduidigGegevensobjecttypeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/EenduidigGegevensobjecttype"
-                            general="http://begrippen.mim-standaard.nl/mimbegrip/EenduidigGegevensobjecttype"/>
          </packagedElement>
          <packagedElement xmi:type="uml:Class"
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegrip/FormeleConditie"
@@ -366,16 +284,6 @@
             </ownedAttribute>
          </packagedElement>
          <packagedElement xmi:type="uml:Class"
-                          xmi:id="http://begrippen.mim-standaard.nl/mimbegrip/SamengesteldEnkelvoudigGegevenstype"
-                          name="Samengesteld enkelvoudig gegevenstype"
-                          visibility="public">
-            <ownedComment xmi:id="-def1"
-                          body="Een samengesteld enkelvoudig gegevenstype is een [gegevenstype] over één [kenmerk] van meerdere [domeinobjecten]"/>
-            <generalization xmi:type="uml:Generalization"
-                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/SamengesteldEnkelvoudigGegevenstypeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/Gegevenstype"
-                            general="http://begrippen.mim-standaard.nl/mimbegrip/Gegevenstype"/>
-         </packagedElement>
-         <packagedElement xmi:type="uml:Class"
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegrip/Relatie"
                           name="Relatie"
                           visibility="public">
@@ -497,7 +405,7 @@
                           name="Attribuuttype van classificerende aard"
                           visibility="public">
             <ownedComment xmi:id="-def1"
-                          body="Een attribuuttype van classificerende aard is een [attribuuttype] als typering van een [categorisch kenmerk]"/>
+                          body="Een attribuuttype van classificerende aard is een [attribuuttype] waarmee een nadere subtypering aan een [objecttype] wordt toegekend."/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/AttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/CategorischKenmerk:trgt"
                             visibility="public"
@@ -510,6 +418,19 @@
                             isDerivedUnion="false"
                             aggregation="none">
                <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/CategorischKenmerk"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/AttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Objecttype:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/AttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Objecttype"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Objecttype"/>
             </ownedAttribute>
             <generalization xmi:type="uml:Generalization"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/AttribuuttypeVanClassificerendeAardskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/Attribuuttype"
@@ -644,16 +565,6 @@
             </ownedAttribute>
          </packagedElement>
          <packagedElement xmi:type="uml:Class"
-                          xmi:id="http://begrippen.mim-standaard.nl/mimbegrip/SamengesteldMeervoudigGegevenstype"
-                          name="Samengesteld meervoudig gegevenstype"
-                          visibility="public">
-            <ownedComment xmi:id="-def1"
-                          body="Een samengesteld meervoudig gegevenstype is een [gegevenstype] over meerdere [kenmerken] van één of meerdere [domeinobjecten]"/>
-            <generalization xmi:type="uml:Generalization"
-                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/SamengesteldMeervoudigGegevenstypeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/Gegevenstype"
-                            general="http://begrippen.mim-standaard.nl/mimbegrip/Gegevenstype"/>
-         </packagedElement>
-         <packagedElement xmi:type="uml:Class"
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegrip/Beschouwingsdomein"
                           name="Beschouwingsdomein"
                           visibility="public">
@@ -734,29 +645,6 @@
                             general="http://begrippen.mim-standaard.nl/mimbegrip/Conditie"/>
          </packagedElement>
          <packagedElement xmi:type="uml:Class"
-                          xmi:id="http://begrippen.mim-standaard.nl/mimbegrip/DirectGegevenstype"
-                          name="Direct gegevenstype"
-                          visibility="public">
-            <ownedComment xmi:id="-def1"
-                          body="Een direct gegevenstype is een [gegevenstype] over één [kenmerk] van een [domeinobject], vastgelegd bij een [gegevensobjectype] dat dit [domeinobject] als [hoofdonderwerp] heeft"/>
-            <ownedAttribute xmi:type="uml:Property"
-                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/DirectGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp:trgt"
-                            visibility="public"
-                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/DirectGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp"
-                            isStatic="false"
-                            isReadOnly="false"
-                            isDerived="false"
-                            isOrdered="false"
-                            isUnique="true"
-                            isDerivedUnion="false"
-                            aggregation="none">
-               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp"/>
-            </ownedAttribute>
-            <generalization xmi:type="uml:Generalization"
-                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/DirectGegevenstypeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/Gegevenstype"
-                            general="http://begrippen.mim-standaard.nl/mimbegrip/Gegevenstype"/>
-         </packagedElement>
-         <packagedElement xmi:type="uml:Class"
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegrip/Objecttype"
                           name="Objecttype"
                           visibility="public">
@@ -818,29 +706,6 @@
             <generalization xmi:type="uml:Generalization"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ToegekendIdentificerendKenmerkskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/IdentificerendKenmerk"
                             general="http://begrippen.mim-standaard.nl/mimbegrip/IdentificerendKenmerk"/>
-         </packagedElement>
-         <packagedElement xmi:type="uml:Class"
-                          xmi:id="http://begrippen.mim-standaard.nl/mimbegrip/IndirectGegevenstype"
-                          name="Indirect gegevenstype"
-                          visibility="public">
-            <ownedComment xmi:id="-def1"
-                          body="Een indirect gegevenstype is een gegevenstype over één [kenmerk] van een [domeinobject], vastgelegd bij een [gegevensobjecttype] dat dit [domeinobject] niet als [hoofdonderwerp] heeft"/>
-            <ownedAttribute xmi:type="uml:Property"
-                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/IndirectGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp:trgt"
-                            visibility="public"
-                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/IndirectGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp"
-                            isStatic="false"
-                            isReadOnly="false"
-                            isDerived="false"
-                            isOrdered="false"
-                            isUnique="true"
-                            isDerivedUnion="false"
-                            aggregation="none">
-               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp"/>
-            </ownedAttribute>
-            <generalization xmi:type="uml:Generalization"
-                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/IndirectGegevenstypeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/Gegevenstype"
-                            general="http://begrippen.mim-standaard.nl/mimbegrip/Gegevenstype"/>
          </packagedElement>
          <packagedElement xmi:type="uml:Class"
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegrip/Domeinobject"
@@ -1111,46 +976,6 @@
                             general="http://begrippen.mim-standaard.nl/mimbegrip/Waarde"/>
          </packagedElement>
          <packagedElement xmi:type="uml:Association"
-                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/EenduidigGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Sleutel"
-                          name="skos:related"
-                          visibility="public">
-            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/EenduidigGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Sleutel:trgt"/>
-            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/EenduidigGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Sleutel:src"/>
-            <ownedEnd xmi:type="uml:Property"
-                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/EenduidigGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Sleutel:src"
-                      visibility="public"
-                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/EenduidigGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Sleutel"
-                      isStatic="false"
-                      isReadOnly="false"
-                      isDerived="false"
-                      isOrdered="false"
-                      isUnique="true"
-                      isDerivedUnion="false"
-                      aggregation="none">
-               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/EenduidigGegevensobjecttype"/>
-            </ownedEnd>
-         </packagedElement>
-         <packagedElement xmi:type="uml:Association"
-                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/EenduidigGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp"
-                          name="skos:related"
-                          visibility="public">
-            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/EenduidigGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp:trgt"/>
-            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/EenduidigGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp:src"/>
-            <ownedEnd xmi:type="uml:Property"
-                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/EenduidigGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp:src"
-                      visibility="public"
-                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/EenduidigGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp"
-                      isStatic="false"
-                      isReadOnly="false"
-                      isDerived="false"
-                      isOrdered="false"
-                      isUnique="true"
-                      isDerivedUnion="false"
-                      aggregation="none">
-               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/EenduidigGegevensobjecttype"/>
-            </ownedEnd>
-         </packagedElement>
-         <packagedElement xmi:type="uml:Association"
                           xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Gegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Gegeven"
                           name="skos:related"
                           visibility="public">
@@ -1208,46 +1033,6 @@
                       isDerivedUnion="false"
                       aggregation="none">
                <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Lengte"/>
-            </ownedEnd>
-         </packagedElement>
-         <packagedElement xmi:type="uml:Association"
-                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/BeschrijvendGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Sleutel"
-                          name="skos:related"
-                          visibility="public">
-            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/BeschrijvendGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Sleutel:trgt"/>
-            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/BeschrijvendGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Sleutel:src"/>
-            <ownedEnd xmi:type="uml:Property"
-                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/BeschrijvendGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Sleutel:src"
-                      visibility="public"
-                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/BeschrijvendGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Sleutel"
-                      isStatic="false"
-                      isReadOnly="false"
-                      isDerived="false"
-                      isOrdered="false"
-                      isUnique="true"
-                      isDerivedUnion="false"
-                      aggregation="none">
-               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/BeschrijvendGegevensobjecttype"/>
-            </ownedEnd>
-         </packagedElement>
-         <packagedElement xmi:type="uml:Association"
-                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/BeschrijvendGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp"
-                          name="skos:related"
-                          visibility="public">
-            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/BeschrijvendGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp:trgt"/>
-            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/BeschrijvendGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp:src"/>
-            <ownedEnd xmi:type="uml:Property"
-                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/BeschrijvendGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp:src"
-                      visibility="public"
-                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/BeschrijvendGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp"
-                      isStatic="false"
-                      isReadOnly="false"
-                      isDerived="false"
-                      isOrdered="false"
-                      isUnique="true"
-                      isDerivedUnion="false"
-                      aggregation="none">
-               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/BeschrijvendGegevensobjecttype"/>
             </ownedEnd>
          </packagedElement>
          <packagedElement xmi:type="uml:Association"
@@ -1611,6 +1396,26 @@
             </ownedEnd>
          </packagedElement>
          <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/AttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Objecttype"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/AttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Objecttype:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/AttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Objecttype:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/AttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Objecttype:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/AttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Objecttype"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/AttribuuttypeVanClassificerendeAard"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
                           xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Cardinaliteitskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Domeinobject"
                           name="skos:related"
                           visibility="public">
@@ -1831,26 +1636,6 @@
             </ownedEnd>
          </packagedElement>
          <packagedElement xmi:type="uml:Association"
-                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/DirectGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp"
-                          name="skos:related"
-                          visibility="public">
-            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/DirectGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp:trgt"/>
-            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/DirectGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp:src"/>
-            <ownedEnd xmi:type="uml:Property"
-                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/DirectGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp:src"
-                      visibility="public"
-                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/DirectGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp"
-                      isStatic="false"
-                      isReadOnly="false"
-                      isDerived="false"
-                      isOrdered="false"
-                      isUnique="true"
-                      isDerivedUnion="false"
-                      aggregation="none">
-               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/DirectGegevenstype"/>
-            </ownedEnd>
-         </packagedElement>
-         <packagedElement xmi:type="uml:Association"
                           xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Objecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Domeinobject"
                           name="skos:related"
                           visibility="public">
@@ -1908,26 +1693,6 @@
                       isDerivedUnion="false"
                       aggregation="none">
                <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Sleutelwaarde"/>
-            </ownedEnd>
-         </packagedElement>
-         <packagedElement xmi:type="uml:Association"
-                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/IndirectGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp"
-                          name="skos:related"
-                          visibility="public">
-            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/IndirectGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp:trgt"/>
-            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/IndirectGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp:src"/>
-            <ownedEnd xmi:type="uml:Property"
-                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/IndirectGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp:src"
-                      visibility="public"
-                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/IndirectGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp"
-                      isStatic="false"
-                      isReadOnly="false"
-                      isDerived="false"
-                      isOrdered="false"
-                      isUnique="true"
-                      isDerivedUnion="false"
-                      aggregation="none">
-               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/IndirectGegevenstype"/>
             </ownedEnd>
          </packagedElement>
          <packagedElement xmi:type="uml:Association"
