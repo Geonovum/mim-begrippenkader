@@ -24,13 +24,19 @@ Specialisatie van: [Kenmerk](#kenmerk)
 
 Gerelateerd: [Categorie](#categorie)
 
+### Categorische waarde
+
+> Een categorische waarde is een aanduiding van een [categorie](#categorie)
+
+Gerelateerd: [Categorie](#categorie)
+
 ### Complexe waarde
 
-> Een complexe [waarde](#waarde) is een [waarde](#waarde) die bestaat uit een samenstel van afzonderlijk benoemde [letterlijke waarden](#letterlijke-waarde) en/of [categorieën](#categorie)
+> Een complexe [waarde](#waarde) is een [waarde](#waarde) die bestaat uit een samenstel van afzonderlijk benoemde [waarden](#waarde)
 
 Specialisatie van: [Waarde](#waarde)
 
-Gerelateerd: [Letterlijke waarde](#letterlijke-waarde), [Categorie](#categorie)
+Gerelateerd: [Waarde](#waarde)
 
 ### Domeinobject
 
@@ -72,9 +78,9 @@ Gerelateerd: [Domeinobject](#domeinobject)
 
 ### Letterlijke waarde
 
-> Een letterlijke [waarde](#waarde) is een [waarde](#waarde) waarvan de betekenis letterlijk genomen moet worden, de [waarde](#waarde) zelf en niets meer
+> Een letterlijke waarde is een aanduiding waarvan de betekenis letterlijk genomen moet worden, de aanduiding zelf en niets meer
 
-Specialisatie van: [Waarde](#waarde)
+Toelichting: Hierbij is een aanduiding een tekenreeks of aaneenschakeling van meerdere tekenreeksen
 
 ### Relatie
 
@@ -100,9 +106,9 @@ Specialisatie van: [Identificerend kenmerk](#identificerend-kenmerk)
 
 ### Waarde
 
-> Een waarde is een tekenreeks of een aaneenschakeling van meerdere tekenreeksen
+> Een waarde is een [letterlijke waarde](#letterlijke-waarde), een [categorische waarde](#categorische-waarde) of een [complexe waarde](#complexe-waarde)
 
-*Waarde wordt in het metamodel niet echt gedefinieerd, slechts letterlijke waarde en complexe waarde kennen een definitie. Bovenstaande definitie lijkt het beste te passen.*
+Generalisatie van: [Complexe waarde](#complexe-waarde), [Categorische waarde](#categorische-waarde), [Letterlijke waarde](#letterlijke-waarde)
 
 ## Typering beschouwingsdomein
 
@@ -114,11 +120,11 @@ Gerelateerd: [Relatietype](#relatietype), [Objecttype](#objecttype), [Kenmerk](#
 
 ### Attribuuttype van classificerende aard
 
-> Een [attribuuttype](#attribuuttype) van classificerende aard is een [attribuuttype](#attribuuttype) als typering van een [categorisch kenmerk](#categorisch-kenmerk)
+> Een [attribuuttype](#attribuuttype) van classificerende aard is een [attribuuttype](#attribuuttype) waarmee een nadere subtypering aan een [objecttype](#objecttype) wordt toegekend.
 
 Specialisatie van: [Attribuuttype](#attribuuttype)
 
-Gerelateerd: [Categorisch kenmerk](#categorisch-kenmerk)
+Gerelateerd: [Categorisch kenmerk](#categorisch-kenmerk), [Objecttype](#objecttype)
 
 ### Cardinaliteit
 
@@ -218,32 +224,6 @@ Gerelateerd: [Waarde](#waarde)
 
 ## Typering verwerkingsdomein
 
-### Beschrijvend gegevensobjecttype
-
-> Een beschrijvend [gegevensobjecttype](#gegevensobjecttype) is een [gegevensobjecttype](#gegevensobjecttype) met precies één [hoofdonderwerp](#hoofdonderwerp), zonder dat de [sleutel](#sleutel) van dat [hoofdonderwerp](#hoofdonderwerp) bekend is
-
-Specialisatie van: [Gegevensobjecttype](#gegevensobjecttype)
-
-Gerelateerd: [Sleutel](#sleutel), [Hoofdonderwerp](#hoofdonderwerp)
-
-### Direct gegevenstype
-
-> Een direct [gegevenstype](#gegevenstype) is een [gegevenstype](#gegevenstype) over één [kenmerk](#kenmerk) van een [domeinobject](#domeinobject), vastgelegd bij een [gegevensobjectype]() dat dit [domeinobject](#domeinobject) als [hoofdonderwerp](#hoofdonderwerp) heeft
-
-Toelichting: Een voorbeeld is werknemer.geboortedatum. Geboortedatum is een eigenschap van een werknemer (feitelijk een eigenschap van een mens, maar aangezien elke werknemer een mens is, is dit ook een eigenschap van een werknemer)
-
-Specialisatie van: [Gegevenstype](#gegevenstype)
-
-Gerelateerd: [Hoofdonderwerp](#hoofdonderwerp)
-
-### Eenduidig gegevensobjecttype
-
-> Een eenduidig [gegevensobjecttype](#gegevensobjecttype) is een [gegevensobjecttype](#gegevensobjecttype) met precies één [hoofdonderwerp](#hoofdonderwerp) waarvan de [sleutel](#sleutel) bekend is
-
-Specialisatie van: [Gegevensobjecttype](#gegevensobjecttype)
-
-Gerelateerd: [Sleutel](#sleutel), [Hoofdonderwerp](#hoofdonderwerp)
-
 ### Gegevensgroeptype
 
 > Een gegevensgroeptype is een typering van gelijksoortige [gegevensgroepen](#gegevensgroep)
@@ -262,32 +242,6 @@ Gerelateerd: [Gegevensobject](#gegevensobject)
 
 Gerelateerd: [Gegeven](#gegeven)
 
-### Indirect gegevenstype
-
-> Een indirect [gegevenstype](#gegevenstype) is een [gegevenstype](#gegevenstype) over één [kenmerk](#kenmerk) van een [domeinobject](#domeinobject), vastgelegd bij een [gegevensobjecttype](#gegevensobjecttype) dat dit [domeinobject](#domeinobject) niet als [hoofdonderwerp](#hoofdonderwerp) heeft
-
-Toelichting: Een voorbeeld is werknemer.woonplaatsnaam. Woonplaatsnaam is geen eigenschap van een werknemer, maar een eigenschap van een woonplaats. De indirectie is (dus) werknemer > woont in woonplaats, woonplaats.naam
-
-Specialisatie van: [Gegevenstype](#gegevenstype)
-
-Gerelateerd: [Hoofdonderwerp](#hoofdonderwerp)
-
-### Samengesteld enkelvoudig gegevenstype
-
-> Een samengesteld enkelvoudig [gegevenstype](#gegevenstype) is een [gegevenstype](#gegevenstype) over één [kenmerk](#kenmerk) van meerdere [domeinobjecten](#domeinobject)
-
-Toelichting: Een voorbeeld is aantal werknemers of totaalbedrag orderregels
-
-Specialisatie van: [Gegevenstype](#gegevenstype)
-
-### Samengesteld meervoudig gegevenstype
-
-> Een samengesteld meervoudig [gegevenstype](#gegevenstype) is een [gegevenstype](#gegevenstype) over meerdere [kenmerken]() van één of meerdere [domeinobjecten](#domeinobject)
-
-Toelichting: Een voorbeeld is percentage ziekteverzuim (van één persoon), of juist percentage ziekteverzuim van een groep personen
-
-Specialisatie van: [Gegevenstype](#gegevenstype)
-
 ### Sleutel
 
 > Een sleutel is een groep van één of meer [gegevenstypen](#gegevenstype) waarmee een unieke aanduiding voor het [hoofdonderwerp](#hoofdonderwerp) van een [gegevensobject](#gegevensobject) kan worden gevormd
@@ -295,12 +249,6 @@ Specialisatie van: [Gegevenstype](#gegevenstype)
 Omvat: [Gegevenstype](#gegevenstype)
 
 Gerelateerd: [Gegevensobject](#gegevensobject), [Hoofdonderwerp](#hoofdonderwerp)
-
-### Strikt eenduidig gegevensobjecttype
-
-> Een strikt eenduidig gegevensobjecttype is een [gegevensobjecttype](#gegevensobjecttype) over alleen [kenmerken]() van het [hoofdonderwerp](#hoofdonderwerp) waarvan de [sleutel](#sleutel) bekend is
-
-Specialisatie van: [Eenduidig gegevensobjecttype](#eenduidig-gegevensobjecttype)
 
 ## Verwerkingsdomein
 
