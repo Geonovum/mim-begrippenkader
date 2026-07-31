@@ -218,32 +218,6 @@ Gerelateerd: [Waarde](#waarde)
 
 ## Typering verwerkingsdomein
 
-### Beschrijvend gegevensobjecttype
-
-> Een beschrijvend [gegevensobjecttype](#gegevensobjecttype) is een [gegevensobjecttype](#gegevensobjecttype) met precies één [hoofdonderwerp](#hoofdonderwerp), zonder dat de [sleutel](#sleutel) van dat [hoofdonderwerp](#hoofdonderwerp) bekend is
-
-Specialisatie van: [Gegevensobjecttype](#gegevensobjecttype)
-
-Gerelateerd: [Sleutel](#sleutel), [Hoofdonderwerp](#hoofdonderwerp)
-
-### Direct gegevenstype
-
-> Een direct [gegevenstype](#gegevenstype) is een [gegevenstype](#gegevenstype) over één [kenmerk](#kenmerk) van een [domeinobject](#domeinobject), vastgelegd bij een [gegevensobjectype]() dat dit [domeinobject](#domeinobject) als [hoofdonderwerp](#hoofdonderwerp) heeft
-
-Toelichting: Een voorbeeld is werknemer.geboortedatum. Geboortedatum is een eigenschap van een werknemer (feitelijk een eigenschap van een mens, maar aangezien elke werknemer een mens is, is dit ook een eigenschap van een werknemer)
-
-Specialisatie van: [Gegevenstype](#gegevenstype)
-
-Gerelateerd: [Hoofdonderwerp](#hoofdonderwerp)
-
-### Eenduidig gegevensobjecttype
-
-> Een eenduidig [gegevensobjecttype](#gegevensobjecttype) is een [gegevensobjecttype](#gegevensobjecttype) met precies één [hoofdonderwerp](#hoofdonderwerp) waarvan de [sleutel](#sleutel) bekend is
-
-Specialisatie van: [Gegevensobjecttype](#gegevensobjecttype)
-
-Gerelateerd: [Sleutel](#sleutel), [Hoofdonderwerp](#hoofdonderwerp)
-
 ### Gegevensgroeptype
 
 > Een gegevensgroeptype is een typering van gelijksoortige [gegevensgroepen](#gegevensgroep)
@@ -262,32 +236,6 @@ Gerelateerd: [Gegevensobject](#gegevensobject)
 
 Gerelateerd: [Gegeven](#gegeven)
 
-### Indirect gegevenstype
-
-> Een indirect [gegevenstype](#gegevenstype) is een [gegevenstype](#gegevenstype) over één [kenmerk](#kenmerk) van een [domeinobject](#domeinobject), vastgelegd bij een [gegevensobjecttype](#gegevensobjecttype) dat dit [domeinobject](#domeinobject) niet als [hoofdonderwerp](#hoofdonderwerp) heeft
-
-Toelichting: Een voorbeeld is werknemer.woonplaatsnaam. Woonplaatsnaam is geen eigenschap van een werknemer, maar een eigenschap van een woonplaats. De indirectie is (dus) werknemer > woont in woonplaats, woonplaats.naam
-
-Specialisatie van: [Gegevenstype](#gegevenstype)
-
-Gerelateerd: [Hoofdonderwerp](#hoofdonderwerp)
-
-### Samengesteld enkelvoudig gegevenstype
-
-> Een samengesteld enkelvoudig [gegevenstype](#gegevenstype) is een [gegevenstype](#gegevenstype) over één [kenmerk](#kenmerk) van meerdere [domeinobjecten](#domeinobject)
-
-Toelichting: Een voorbeeld is aantal werknemers of totaalbedrag orderregels
-
-Specialisatie van: [Gegevenstype](#gegevenstype)
-
-### Samengesteld meervoudig gegevenstype
-
-> Een samengesteld meervoudig [gegevenstype](#gegevenstype) is een [gegevenstype](#gegevenstype) over meerdere [kenmerken]() van één of meerdere [domeinobjecten](#domeinobject)
-
-Toelichting: Een voorbeeld is percentage ziekteverzuim (van één persoon), of juist percentage ziekteverzuim van een groep personen
-
-Specialisatie van: [Gegevenstype](#gegevenstype)
-
 ### Sleutel
 
 > Een sleutel is een groep van één of meer [gegevenstypen](#gegevenstype) waarmee een unieke aanduiding voor het [hoofdonderwerp](#hoofdonderwerp) van een [gegevensobject](#gegevensobject) kan worden gevormd
@@ -295,12 +243,6 @@ Specialisatie van: [Gegevenstype](#gegevenstype)
 Omvat: [Gegevenstype](#gegevenstype)
 
 Gerelateerd: [Gegevensobject](#gegevensobject), [Hoofdonderwerp](#hoofdonderwerp)
-
-### Strikt eenduidig gegevensobjecttype
-
-> Een strikt eenduidig gegevensobjecttype is een [gegevensobjecttype](#gegevensobjecttype) over alleen [kenmerken]() van het [hoofdonderwerp](#hoofdonderwerp) waarvan de [sleutel](#sleutel) bekend is
-
-Specialisatie van: [Eenduidig gegevensobjecttype](#eenduidig-gegevensobjecttype)
 
 ## Verwerkingsdomein
 
