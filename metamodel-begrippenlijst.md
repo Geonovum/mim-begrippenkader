@@ -3,7 +3,7 @@
 |Begrip|Definitie|
 |------|---------|
 |[Attribuuttype](#attribuuttype)|Een attribuuttype is een typering van een [kenmerk](#kenmerk), behorende tot een [objecttype](#objecttype) of [relatietype](#relatietype)|
-|[Attribuuttype van classificerende aard](#attribuuttype-van-classificerende-aard)|Een attribuuttype van classificerende aard is een [attribuuttype](#attribuuttype) als typering van een [categorisch kenmerk](#categorisch-kenmerk)|
+|[Attribuuttype van classificerende aard](#attribuuttype-van-classificerende-aard)|Een attribuuttype van classificerende aard is een [attribuuttype](#attribuuttype) waarmee een nadere subtypering aan een [objecttype](#objecttype) wordt toegekend.|
 |[Beschouwingsdomein](#beschouwingsdomein)|Een beschouwingsdomein is een afgebakend deel van de werkelijkheid dat we relevant vinden om te beschouwen vanuit een bepaalde context|
 |[Cardinaliteit](#cardinaliteit)|Een cardinaliteit is een [conditie](#conditie) waarbij van een [kenmerk](#kenmerk) is gesteld hoeveel invullingen er voor één [domeinobject](#domeinobject) minimaal en maximaal zijn|
 |[Categorie](#categorie)|Een categorie is een aanduiding van een groep [domeinobjecten](#domeinobject) die een kwaliteit gemeen hebben|

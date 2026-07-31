@@ -405,7 +405,7 @@
                           name="Attribuuttype van classificerende aard"
                           visibility="public">
             <ownedComment xmi:id="-def1"
-                          body="Een attribuuttype van classificerende aard is een [attribuuttype] als typering van een [categorisch kenmerk]"/>
+                          body="Een attribuuttype van classificerende aard is een [attribuuttype] waarmee een nadere subtypering aan een [objecttype] wordt toegekend."/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/AttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/CategorischKenmerk:trgt"
                             visibility="public"
@@ -418,6 +418,19 @@
                             isDerivedUnion="false"
                             aggregation="none">
                <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/CategorischKenmerk"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/AttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Objecttype:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/AttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Objecttype"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Objecttype"/>
             </ownedAttribute>
             <generalization xmi:type="uml:Generalization"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/AttribuuttypeVanClassificerendeAardskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/Attribuuttype"
@@ -1372,6 +1385,26 @@
                       xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/AttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/CategorischKenmerk:src"
                       visibility="public"
                       association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/AttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/CategorischKenmerk"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/AttribuuttypeVanClassificerendeAard"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/AttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Objecttype"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/AttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Objecttype:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/AttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Objecttype:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/AttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Objecttype:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/AttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Objecttype"
                       isStatic="false"
                       isReadOnly="false"
                       isDerived="false"

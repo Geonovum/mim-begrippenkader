@@ -114,11 +114,11 @@ Gerelateerd: [Relatietype](#relatietype), [Objecttype](#objecttype), [Kenmerk](#
 
 ### Attribuuttype van classificerende aard
 
-> Een [attribuuttype](#attribuuttype) van classificerende aard is een [attribuuttype](#attribuuttype) als typering van een [categorisch kenmerk](#categorisch-kenmerk)
+> Een [attribuuttype](#attribuuttype) van classificerende aard is een [attribuuttype](#attribuuttype) waarmee een nadere subtypering aan een [objecttype](#objecttype) wordt toegekend.
 
 Specialisatie van: [Attribuuttype](#attribuuttype)
 
-Gerelateerd: [Categorisch kenmerk](#categorisch-kenmerk)
+Gerelateerd: [Categorisch kenmerk](#categorisch-kenmerk), [Objecttype](#objecttype)
 
 ### Cardinaliteit
 
