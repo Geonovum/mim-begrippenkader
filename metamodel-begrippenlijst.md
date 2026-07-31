@@ -8,9 +8,10 @@
 |[Cardinaliteit](#cardinaliteit)|Een cardinaliteit is een [conditie](#conditie) waarbij van een [kenmerk](#kenmerk) is gesteld hoeveel invullingen er voor één [domeinobject](#domeinobject) minimaal en maximaal zijn|
 |[Categorie](#categorie)|Een categorie is een aanduiding van een groep [domeinobjecten](#domeinobject) die een kwaliteit gemeen hebben|
 |[Categorisch kenmerk](#categorisch-kenmerk)|Een categorisch kenmerk is een [kenmerk](#kenmerk) van een [domeinobject](#domeinobject) waar een [categorie](#categorie) aan kan worden toegekend|
+|[Categorische waarde](#categorische-waarde)|Een categorische waarde is een aanduiding van een categorie|
 |[Classificatieschema](#classificatieschema)|Een classificatieschema is een systematische ordening van [domeinobjecten](#domeinobject) in [categorieën](#categorie)|
 |[Complex waardetype](#complex-waardetype)|Een complex waardetype is een typering van gelijksoortige [complexe waarden](#complexe-waarde)|
-|[Complexe waarde](#complexe-waarde)|Een complexe waarde is een [waarde](#waarde) die bestaat uit een samenstel van afzonderlijk benoemde [letterlijke waarden](#letterlijke-waarde) en/of [categorieën](#categorie)|
+|[Complexe waarde](#complexe-waarde)|Een complexe waarde is een [waarde](#waarde) die bestaat uit een samenstel van afzonderlijk benoemde [waarden](#waarde)|
 |[Conditie](#conditie)|Een conditie is een noodzakelijke voorwaarde die moet gelden voor een typering|
 |[Datatype](#datatype)|Een datatype is een [conditie](#conditie) waarbij van een [kenmerk](#kenmerk) of [waarde](#waarde) is gesteld wat voor datatype de [waarde](#waarde) of invulling van dat [kenmerk](#kenmerk) mag zijn|
 |[Domeinobject](#domeinobject)|Een domeinobject is een onderscheidbaar en identificeerbaar iets in de beschouwde werkelijkheid|
@@ -28,7 +29,7 @@
 |[Informele conditie](#informele-conditie)|Een informele conditie is een [conditie](#conditie) die beschreven is in natuurlijk taal|
 |[Kenmerk](#kenmerk)|Een kenmerk is een verschijnsel dat toegekend kan worden aan bepaalde [domeinobjecten](#domeinobject).|
 |[Lengte](#lengte)|Een lengte is een [conditie](#conditie) waarbij van een [kenmerk](#kenmerk) of [waarde](#waarde) is gesteld hoe lang de [waarde](#waarde) of invulling van dat [kenmerk](#kenmerk) mag zijn|
-|[Letterlijke waarde](#letterlijke-waarde)|Een letterlijke waarde is een [waarde](#waarde) waarvan de betekenis letterlijk genomen moet worden, de waarde zelf en niets meer|
+|[Letterlijke waarde](#letterlijke-waarde)|Een letterlijke waarde is een aanduiding waarvan de betekenis letterlijk genomen moet worden, de aanduiding zelf en niets meer|
 |[Objecttype](#objecttype)|Een objecttype is een typering van gelijksoortige [domeinobjecten](#domeinobject)|
 |[Populatie](#populatie)|Een POPULATIE is de verzameling van alle mogelijke [domeinobjecten](#domeinobject) die in de beschouwde werkelijkheid te onderscheiden zijn als [objecttype](#objecttype)|
 |[Relatie](#relatie)|Een relatie is een verbintenis tussen [domeinobjecten](#domeinobject)|
@@ -40,5 +41,5 @@
 |[Toegekend identificerend kenmerk](#toegekend-identificerend-kenmerk)|Een toegekend identificerend kenmerk is een [identificerend kenmerk](#identificerend-kenmerk) dat is toegekend aan een [domeinobject](#domeinobject) om dit domeinobject uniek te kunnen identificeren|
 |[Verwerkingsdomein](#verwerkingsdomein)|Een verwerkingsdomein is een afgebakend deel van de werkelijkheid waarin gegevens worden verwerkt over het beschouwingsdomein|
 |[Verwoording](#verwoording)|Een verwoording is een beschrijving van de manier waarop een voorkomen van een [relatietype](#relatietype) kan worden uitgedrukt in een propositie|
-|[Waarde](#waarde)|Een waarde is een tekenreeks of een aaneenschakeling van meerdere tekenreeksen|
+|[Waarde](#waarde)|Een waarde is een [letterlijke waarde](#letterlijke-waarde), een [categorische waarde](#categorische-waarde) of een [complexe waarde](#complexe-waarde)|
 |[Waardetype](#waardetype)|Een waardetype is een typering van gelijksoortige [waarden](#waarde)|

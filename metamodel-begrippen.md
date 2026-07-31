@@ -24,13 +24,19 @@ Specialisatie van: [Kenmerk](#kenmerk)
 
 Gerelateerd: [Categorie](#categorie)
 
+### Categorische waarde
+
+> Een categorische waarde is een aanduiding van een [categorie](#categorie)
+
+Gerelateerd: [Categorie](#categorie)
+
 ### Complexe waarde
 
-> Een complexe [waarde](#waarde) is een [waarde](#waarde) die bestaat uit een samenstel van afzonderlijk benoemde [letterlijke waarden](#letterlijke-waarde) en/of [categorieën](#categorie)
+> Een complexe [waarde](#waarde) is een [waarde](#waarde) die bestaat uit een samenstel van afzonderlijk benoemde [waarden](#waarde)
 
 Specialisatie van: [Waarde](#waarde)
 
-Gerelateerd: [Letterlijke waarde](#letterlijke-waarde), [Categorie](#categorie)
+Gerelateerd: [Waarde](#waarde)
 
 ### Domeinobject
 
@@ -72,9 +78,9 @@ Gerelateerd: [Domeinobject](#domeinobject)
 
 ### Letterlijke waarde
 
-> Een letterlijke [waarde](#waarde) is een [waarde](#waarde) waarvan de betekenis letterlijk genomen moet worden, de [waarde](#waarde) zelf en niets meer
+> Een letterlijke waarde is een aanduiding waarvan de betekenis letterlijk genomen moet worden, de aanduiding zelf en niets meer
 
-Specialisatie van: [Waarde](#waarde)
+Toelichting: Hierbij is een aanduiding een tekenreeks of aaneenschakeling van meerdere tekenreeksen
 
 ### Relatie
 
@@ -100,9 +106,9 @@ Specialisatie van: [Identificerend kenmerk](#identificerend-kenmerk)
 
 ### Waarde
 
-> Een waarde is een tekenreeks of een aaneenschakeling van meerdere tekenreeksen
+> Een waarde is een [letterlijke waarde](#letterlijke-waarde), een [categorische waarde](#categorische-waarde) of een [complexe waarde](#complexe-waarde)
 
-*Waarde wordt in het metamodel niet echt gedefinieerd, slechts letterlijke waarde en complexe waarde kennen een definitie. Bovenstaande definitie lijkt het beste te passen.*
+Generalisatie van: [Complexe waarde](#complexe-waarde), [Categorische waarde](#categorische-waarde), [Letterlijke waarde](#letterlijke-waarde)
 
 ## Typering beschouwingsdomein
 

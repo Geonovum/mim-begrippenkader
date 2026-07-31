@@ -80,6 +80,26 @@
                             general="http://begrippen.mim-standaard.nl/mimbegrip/Conditie"/>
          </packagedElement>
          <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaarde"
+                          name="Categorische waarde"
+                          visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een categorische waarde is een aanduiding van een categorie"/>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Categorie:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Categorie"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Categorie"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegrip/FormeleConditie"
                           name="Formele conditie"
                           visibility="public">
@@ -583,7 +603,46 @@
                           name="Waarde"
                           visibility="public">
             <ownedComment xmi:id="-def1"
-                          body="Een waarde is een tekenreeks of een aaneenschakeling van meerdere tekenreeksen"/>
+                          body="Een waarde is een [letterlijke waarde], een [categorische waarde] of een [complexe waarde]"/>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardeskosthes:narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaarde:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardeskosthes:narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaarde"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaarde"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardeskosthes:narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaarde:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardeskosthes:narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaarde"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaarde"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardeskosthes:narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaarde:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardeskosthes:narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaarde"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaarde"/>
+            </ownedAttribute>
          </packagedElement>
          <packagedElement xmi:type="uml:Class"
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp"
@@ -914,10 +973,7 @@
                           name="Letterlijke waarde"
                           visibility="public">
             <ownedComment xmi:id="-def1"
-                          body="Een letterlijke waarde is een [waarde] waarvan de betekenis letterlijk genomen moet worden, de waarde zelf en niets meer"/>
-            <generalization xmi:type="uml:Generalization"
-                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaardeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/Waarde"
-                            general="http://begrippen.mim-standaard.nl/mimbegrip/Waarde"/>
+                          body="Een letterlijke waarde is een aanduiding waarvan de betekenis letterlijk genomen moet worden, de aanduiding zelf en niets meer"/>
          </packagedElement>
          <packagedElement xmi:type="uml:Class"
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegrip/Gegevensgroeptype"
@@ -944,11 +1000,11 @@
                           name="Complexe waarde"
                           visibility="public">
             <ownedComment xmi:id="-def1"
-                          body="Een complexe waarde is een [waarde] die bestaat uit een samenstel van afzonderlijk benoemde [letterlijke waarden] en/of [categorieën]"/>
+                          body="Een complexe waarde is een [waarde] die bestaat uit een samenstel van afzonderlijk benoemde [waarden]"/>
             <ownedAttribute xmi:type="uml:Property"
-                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaarde:trgt"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Waarde:trgt"
                             visibility="public"
-                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaarde"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Waarde"
                             isStatic="false"
                             isReadOnly="false"
                             isDerived="false"
@@ -956,20 +1012,7 @@
                             isUnique="true"
                             isDerivedUnion="false"
                             aggregation="none">
-               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaarde"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:type="uml:Property"
-                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Categorie:trgt"
-                            visibility="public"
-                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Categorie"
-                            isStatic="false"
-                            isReadOnly="false"
-                            isDerived="false"
-                            isOrdered="false"
-                            isUnique="true"
-                            isDerivedUnion="false"
-                            aggregation="none">
-               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Categorie"/>
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Waarde"/>
             </ownedAttribute>
             <generalization xmi:type="uml:Generalization"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/Waarde"
@@ -1033,6 +1076,26 @@
                       isDerivedUnion="false"
                       aggregation="none">
                <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Lengte"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Categorie"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Categorie:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Categorie:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Categorie:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Categorie"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaarde"/>
             </ownedEnd>
          </packagedElement>
          <packagedElement xmi:type="uml:Association"
@@ -1576,6 +1639,66 @@
             </ownedEnd>
          </packagedElement>
          <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardeskosthes:narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaarde"
+                          name="skosthes:narrowerGeneric"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardeskosthes:narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaarde:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardeskosthes:narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaarde:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardeskosthes:narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaarde:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardeskosthes:narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaarde"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Waarde"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardeskosthes:narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaarde"
+                          name="skosthes:narrowerGeneric"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardeskosthes:narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaarde:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardeskosthes:narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaarde:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardeskosthes:narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaarde:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardeskosthes:narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaarde"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Waarde"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardeskosthes:narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaarde"
+                          name="skosthes:narrowerGeneric"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardeskosthes:narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaarde:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardeskosthes:narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaarde:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardeskosthes:narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaarde:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardeskosthes:narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaarde"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Waarde"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
                           xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerpskosthes:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Gegevensobject"
                           name="skosthes:related"
                           visibility="public">
@@ -1936,35 +2059,15 @@
             </ownedEnd>
          </packagedElement>
          <packagedElement xmi:type="uml:Association"
-                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaarde"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Waarde"
                           name="skos:related"
                           visibility="public">
-            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaarde:trgt"/>
-            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaarde:src"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Waarde:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Waarde:src"/>
             <ownedEnd xmi:type="uml:Property"
-                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaarde:src"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Waarde:src"
                       visibility="public"
-                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaarde"
-                      isStatic="false"
-                      isReadOnly="false"
-                      isDerived="false"
-                      isOrdered="false"
-                      isUnique="true"
-                      isDerivedUnion="false"
-                      aggregation="none">
-               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaarde"/>
-            </ownedEnd>
-         </packagedElement>
-         <packagedElement xmi:type="uml:Association"
-                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Categorie"
-                          name="skos:related"
-                          visibility="public">
-            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Categorie:trgt"/>
-            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Categorie:src"/>
-            <ownedEnd xmi:type="uml:Property"
-                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Categorie:src"
-                      visibility="public"
-                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Categorie"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Waarde"
                       isStatic="false"
                       isReadOnly="false"
                       isDerived="false"

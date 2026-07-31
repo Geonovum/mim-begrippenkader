@@ -246,6 +246,55 @@
             </y:GenericNode>
          </data>
       </node>
+      <node id="http://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaarde">
+         <data key="d3">http://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaarde</data>
+         <data key="d6">
+            <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+               <y:Geometry height="90.0" width="80.0" x="637.0" y="277.0"/>
+               <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
+               <y:BorderStyle color="#000000" type="line" width="1.0"/>
+               <y:NodeLabel alignment="center" autoSizePolicy="node_width" backgroundColor="#B7C9E3"
+                            configuration="CroppingLabel"
+                            fontFamily="Dialog"
+                            fontSize="12"
+                            fontStyle="plain"
+                            hasLineColor="false"
+                            height="18.1328125"
+                            horizontalTextPosition="center"
+                            iconTextGap="4"
+                            modelName="internal"
+                            modelPosition="t"
+                            textColor="#000000"
+                            verticalTextPosition="bottom"
+                            visible="true"
+                            width="44.25390625"
+                            x="17.873046875"
+                            y="4.0">Categorische waarde</y:NodeLabel>
+               <y:NodeLabel alignment="left" autoSizePolicy="node_size" configuration="CroppingLabel"
+                            fontFamily="Dialog"
+                            fontSize="12"
+                            fontStyle="plain"
+                            hasBackgroundColor="false"
+                            hasLineColor="false"
+                            height="46.3984375"
+                            horizontalTextPosition="center"
+                            iconTextGap="4"
+                            modelName="custom"
+                            textColor="#000000"
+                            verticalTextPosition="top"
+                            visible="true"
+                            width="65.541015625"
+                            x="2.0"
+                            y="30.1328125">Een categorische waarde is een aanduiding van een categorie<y:LabelModel>
+                     <y:ErdAttributesNodeLabelModel/>
+                  </y:LabelModel>
+                  <y:ModelParameter>
+                     <y:ErdAttributesNodeLabelModelParameter/>
+                  </y:ModelParameter>
+               </y:NodeLabel>
+            </y:GenericNode>
+         </data>
+      </node>
       <node id="http://begrippen.mim-standaard.nl/mimbegrip/FormeleConditie">
          <data key="d3">http://begrippen.mim-standaard.nl/mimbegrip/FormeleConditie</data>
          <data key="d6">
@@ -1396,7 +1445,7 @@
                             visible="true"
                             width="65.541015625"
                             x="2.0"
-                            y="30.1328125">Een waarde is een tekenreeks of een aaneenschakeling van meerdere tekenreeksen<y:LabelModel>
+                            y="30.1328125">Een waarde is een [letterlijke waarde], een [categorische waarde] of een [complexe waarde]<y:LabelModel>
                      <y:ErdAttributesNodeLabelModel/>
                   </y:LabelModel>
                   <y:ModelParameter>
@@ -2208,7 +2257,7 @@
                             visible="true"
                             width="65.541015625"
                             x="2.0"
-                            y="30.1328125">Een letterlijke waarde is een [waarde] waarvan de betekenis letterlijk genomen moet worden, de waarde zelf en niets meer<y:LabelModel>
+                            y="30.1328125">Een letterlijke waarde is een aanduiding waarvan de betekenis letterlijk genomen moet worden, de aanduiding zelf en niets meer<y:LabelModel>
                      <y:ErdAttributesNodeLabelModel/>
                   </y:LabelModel>
                   <y:ModelParameter>
@@ -2324,7 +2373,7 @@
                             visible="true"
                             width="65.541015625"
                             x="2.0"
-                            y="30.1328125">Een complexe waarde is een [waarde] die bestaat uit een samenstel van afzonderlijk benoemde [letterlijke waarden] en/of [categorieën]<y:LabelModel>
+                            y="30.1328125">Een complexe waarde is een [waarde] die bestaat uit een samenstel van afzonderlijk benoemde [waarden]<y:LabelModel>
                      <y:ErdAttributesNodeLabelModel/>
                   </y:LabelModel>
                   <y:ModelParameter>
@@ -2500,6 +2549,43 @@
                             ratio="0.5"
                             textColor="#000000"
                             visible="true">is specialisatie van<y:LabelModel>
+                     <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+                  </y:LabelModel>
+                  <y:ModelParameter>
+                     <y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center"
+                                                     ratio="0.5"
+                                                     segment="0"/>
+                  </y:ModelParameter>
+                  <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute"
+                                                  angleRotationOnRightSide="co"
+                                                  distance="-1.0"
+                                                  frozen="true"
+                                                  placement="anywhere"
+                                                  side="anywhere"
+                                                  sideReference="relative_to_edge_flow"/>
+               </y:EdgeLabel>
+               <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+         </data>
+      </edge>
+      <edge source="http://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaarde"
+            target="http://begrippen.mim-standaard.nl/mimbegrip/Categorie">
+         <data key="d7">urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaardehttp://www.w3.org/2004/02/skos/core#relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Categorie</data>
+         <data key="d10">
+            <y:PolyLineEdge>
+               <y:LineStyle color="#000000" type="line" width="1.0"/>
+               <y:Arrows source="none" target="standard"/>
+               <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel"
+                            distance="2.0"
+                            fontFamily="Dialog"
+                            fontSize="12"
+                            fontStyle="plain"
+                            hasLineColor="false"
+                            modelName="custom"
+                            preferredPlacement="anywhere"
+                            ratio="0.5"
+                            textColor="#000000"
+                            visible="true">is gerelateerd aan<y:LabelModel>
                      <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
                   </y:LabelModel>
                   <y:ModelParameter>
@@ -3740,6 +3826,117 @@
             </y:PolyLineEdge>
          </data>
       </edge>
+      <edge source="http://begrippen.mim-standaard.nl/mimbegrip/Waarde"
+            target="http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaarde">
+         <data key="d7">urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardehttp://purl.org/iso25964/skos-thes#narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaarde</data>
+         <data key="d10">
+            <y:PolyLineEdge>
+               <y:LineStyle color="#000000" type="line" width="1.0"/>
+               <y:Arrows source="none" target="standard"/>
+               <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel"
+                            distance="2.0"
+                            fontFamily="Dialog"
+                            fontSize="12"
+                            fontStyle="plain"
+                            hasLineColor="false"
+                            modelName="custom"
+                            preferredPlacement="anywhere"
+                            ratio="0.5"
+                            textColor="#000000"
+                            visible="true">is generalisatie van<y:LabelModel>
+                     <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+                  </y:LabelModel>
+                  <y:ModelParameter>
+                     <y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center"
+                                                     ratio="0.5"
+                                                     segment="0"/>
+                  </y:ModelParameter>
+                  <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute"
+                                                  angleRotationOnRightSide="co"
+                                                  distance="-1.0"
+                                                  frozen="true"
+                                                  placement="anywhere"
+                                                  side="anywhere"
+                                                  sideReference="relative_to_edge_flow"/>
+               </y:EdgeLabel>
+               <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+         </data>
+      </edge>
+      <edge source="http://begrippen.mim-standaard.nl/mimbegrip/Waarde"
+            target="http://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaarde">
+         <data key="d7">urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardehttp://purl.org/iso25964/skos-thes#narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/CategorischeWaarde</data>
+         <data key="d10">
+            <y:PolyLineEdge>
+               <y:LineStyle color="#000000" type="line" width="1.0"/>
+               <y:Arrows source="none" target="standard"/>
+               <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel"
+                            distance="2.0"
+                            fontFamily="Dialog"
+                            fontSize="12"
+                            fontStyle="plain"
+                            hasLineColor="false"
+                            modelName="custom"
+                            preferredPlacement="anywhere"
+                            ratio="0.5"
+                            textColor="#000000"
+                            visible="true">is generalisatie van<y:LabelModel>
+                     <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+                  </y:LabelModel>
+                  <y:ModelParameter>
+                     <y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center"
+                                                     ratio="0.5"
+                                                     segment="0"/>
+                  </y:ModelParameter>
+                  <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute"
+                                                  angleRotationOnRightSide="co"
+                                                  distance="-1.0"
+                                                  frozen="true"
+                                                  placement="anywhere"
+                                                  side="anywhere"
+                                                  sideReference="relative_to_edge_flow"/>
+               </y:EdgeLabel>
+               <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+         </data>
+      </edge>
+      <edge source="http://begrippen.mim-standaard.nl/mimbegrip/Waarde"
+            target="http://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaarde">
+         <data key="d7">urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Waardehttp://purl.org/iso25964/skos-thes#narrowerGenerichttp://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaarde</data>
+         <data key="d10">
+            <y:PolyLineEdge>
+               <y:LineStyle color="#000000" type="line" width="1.0"/>
+               <y:Arrows source="none" target="standard"/>
+               <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel"
+                            distance="2.0"
+                            fontFamily="Dialog"
+                            fontSize="12"
+                            fontStyle="plain"
+                            hasLineColor="false"
+                            modelName="custom"
+                            preferredPlacement="anywhere"
+                            ratio="0.5"
+                            textColor="#000000"
+                            visible="true">is generalisatie van<y:LabelModel>
+                     <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+                  </y:LabelModel>
+                  <y:ModelParameter>
+                     <y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center"
+                                                     ratio="0.5"
+                                                     segment="0"/>
+                  </y:ModelParameter>
+                  <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute"
+                                                  angleRotationOnRightSide="co"
+                                                  distance="-1.0"
+                                                  frozen="true"
+                                                  placement="anywhere"
+                                                  side="anywhere"
+                                                  sideReference="relative_to_edge_flow"/>
+               </y:EdgeLabel>
+               <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+         </data>
+      </edge>
       <edge source="http://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerp"
             target="http://begrippen.mim-standaard.nl/mimbegrip/Gegevensobject">
          <data key="d7">urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Hoofdonderwerphttp://purl.org/iso25964/skos-thes#relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Gegevensobject</data>
@@ -4517,43 +4714,6 @@
             </y:PolyLineEdge>
          </data>
       </edge>
-      <edge source="http://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaarde"
-            target="http://begrippen.mim-standaard.nl/mimbegrip/Waarde">
-         <data key="d7">urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaardehttp://purl.org/iso25964/skos-thes#broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/Waarde</data>
-         <data key="d10">
-            <y:PolyLineEdge>
-               <y:LineStyle color="#000000" type="line" width="1.0"/>
-               <y:Arrows source="none" target="white_delta"/>
-               <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel"
-                            distance="2.0"
-                            fontFamily="Dialog"
-                            fontSize="12"
-                            fontStyle="plain"
-                            hasLineColor="false"
-                            modelName="custom"
-                            preferredPlacement="anywhere"
-                            ratio="0.5"
-                            textColor="#000000"
-                            visible="true">is specialisatie van<y:LabelModel>
-                     <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
-                  </y:LabelModel>
-                  <y:ModelParameter>
-                     <y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center"
-                                                     ratio="0.5"
-                                                     segment="0"/>
-                  </y:ModelParameter>
-                  <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute"
-                                                  angleRotationOnRightSide="co"
-                                                  distance="-1.0"
-                                                  frozen="true"
-                                                  placement="anywhere"
-                                                  side="anywhere"
-                                                  sideReference="relative_to_edge_flow"/>
-               </y:EdgeLabel>
-               <y:BendStyle smoothed="false"/>
-            </y:PolyLineEdge>
-         </data>
-      </edge>
       <edge source="http://begrippen.mim-standaard.nl/mimbegrip/Gegevensgroeptype"
             target="http://begrippen.mim-standaard.nl/mimbegrip/Gegevensgroep">
          <data key="d7">urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Gegevensgroeptypehttp://www.w3.org/2004/02/skos/core#relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Gegevensgroep</data>
@@ -4592,45 +4752,8 @@
          </data>
       </edge>
       <edge source="http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaarde"
-            target="http://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaarde">
-         <data key="d7">urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardehttp://www.w3.org/2004/02/skos/core#relatedhttp://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaarde</data>
-         <data key="d10">
-            <y:PolyLineEdge>
-               <y:LineStyle color="#000000" type="line" width="1.0"/>
-               <y:Arrows source="none" target="standard"/>
-               <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel"
-                            distance="2.0"
-                            fontFamily="Dialog"
-                            fontSize="12"
-                            fontStyle="plain"
-                            hasLineColor="false"
-                            modelName="custom"
-                            preferredPlacement="anywhere"
-                            ratio="0.5"
-                            textColor="#000000"
-                            visible="true">is gerelateerd aan<y:LabelModel>
-                     <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
-                  </y:LabelModel>
-                  <y:ModelParameter>
-                     <y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center"
-                                                     ratio="0.5"
-                                                     segment="0"/>
-                  </y:ModelParameter>
-                  <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute"
-                                                  angleRotationOnRightSide="co"
-                                                  distance="-1.0"
-                                                  frozen="true"
-                                                  placement="anywhere"
-                                                  side="anywhere"
-                                                  sideReference="relative_to_edge_flow"/>
-               </y:EdgeLabel>
-               <y:BendStyle smoothed="false"/>
-            </y:PolyLineEdge>
-         </data>
-      </edge>
-      <edge source="http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaarde"
-            target="http://begrippen.mim-standaard.nl/mimbegrip/Categorie">
-         <data key="d7">urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardehttp://www.w3.org/2004/02/skos/core#relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Categorie</data>
+            target="http://begrippen.mim-standaard.nl/mimbegrip/Waarde">
+         <data key="d7">urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardehttp://www.w3.org/2004/02/skos/core#relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Waarde</data>
          <data key="d10">
             <y:PolyLineEdge>
                <y:LineStyle color="#000000" type="line" width="1.0"/>

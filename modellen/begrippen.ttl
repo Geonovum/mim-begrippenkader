@@ -132,8 +132,10 @@ mimbegrip:Waarde a skos:Concept;
   rdfs:label "Waarde"@nl;
   skos:prefLabel "Waarde"@nl;
   skos:inScheme schema:Beschouwingsdomein;
-  skos:definition "Een waarde is een tekenreeks of een aaneenschakeling van meerdere tekenreeksen"@nl;
-  skos:editorialNote "Waarde wordt in het metamodel niet echt gedefinieerd, slechts letterlijke waarde en complexe waarde kennen een definitie. Bovenstaande definitie lijkt het beste te passen."@nl;
+  skos:definition "Een waarde is een [letterlijke waarde], een [categorische waarde] of een [complexe waarde]"@nl;
+  skosthes:narrowerGeneric mimbegrip:LetterlijkeWaarde;
+  skosthes:narrowerGeneric mimbegrip:CategorischeWaarde;
+  skosthes:narrowerGeneric mimbegrip:ComplexeWaarde;
 .
 term:waarde skosxl:literalForm "waarde";
   skosxl:hiddenLabel term:waarden
@@ -144,22 +146,34 @@ mimbegrip:LetterlijkeWaarde a skos:Concept;
   rdfs:label "Letterlijke waarde"@nl;
   skos:prefLabel "Letterlijke waarde"@nl;
   skos:inScheme schema:Beschouwingsdomein;
-  skos:definition "Een letterlijke waarde is een [waarde] waarvan de betekenis letterlijk genomen moet worden, de waarde zelf en niets meer"@nl;
-  skosthes:broaderGeneric mimbegrip:Waarde;
+  skos:definition "Een letterlijke waarde is een aanduiding waarvan de betekenis letterlijk genomen moet worden, de aanduiding zelf en niets meer"@nl;
+  skos:scopeNote "Hierbij is een aanduiding een tekenreeks of aaneenschakeling van meerdere tekenreeksen"@nl;
 .
 term:letterlijke-waarde skosxl:literalForm "letterlijke waarde";
   skosxl:hiddenLabel term:letterlijke-waarden
 .
 term:letterlijke-waarden skosxl:literalForm "letterlijke waarden".
 
+mimbegrip:CategorischeWaarde a skos:Concept;
+  rdfs:label "Categorische waarde"@nl;
+  skos:prefLabel "Categorische waarde"@nl;
+  skos:inScheme schema:Beschouwingsdomein;
+  skos:definition "Een categorische waarde is een aanduiding van een categorie"@nl;
+  skos:related mimbegrip:Categorie;
+.
+
+term:categorische-waarde skosxl:literalForm "categorische waarde";
+  skosxl:hiddenLabel term:categorische-waarden
+.
+term:categorische-waarden skosxl:literalForm "categorische waarden".
+
 mimbegrip:ComplexeWaarde a skos:Concept;
   rdfs:label "Complexe waarde"@nl;
   skos:prefLabel "Complexe waarde"@nl;
   skos:inScheme schema:Beschouwingsdomein;
-  skos:definition "Een complexe waarde is een [waarde] die bestaat uit een samenstel van afzonderlijk benoemde [letterlijke waarden] en/of [categorieën]"@nl;
+  skos:definition "Een complexe waarde is een [waarde] die bestaat uit een samenstel van afzonderlijk benoemde [waarden]"@nl;
   skosthes:broaderGeneric mimbegrip:Waarde;
-  skos:related mimbegrip:Categorie;
-  skos:related mimbegrip:LetterlijkeWaarde;
+  skos:related mimbegrip:Waarde;
 .
 term:complexe-waarde skosxl:literalForm "complexe waarde";
   skosxl:hiddenLabel term:complexe-waarden
